@@ -1,4 +1,3 @@
-import Link from 'next/link'
 
 export default function FirstSlider() {
     const cardList = [
@@ -42,12 +41,10 @@ export default function FirstSlider() {
                         без операции
                     </span>
                 </div>
-                <Link href="/">
                     <button className='slick-btn'>
                         Получить консультацию
 
                     </button>
-                </Link>
                 <div className='cards-wrapper'>
                     {
                         cardList.map((e) =>

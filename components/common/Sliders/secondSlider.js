@@ -8,7 +8,6 @@ export default function SecondSlider() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     })
-    console.log(offset);
     return (
         <div className=" secondSlider">
             <img style={offset < 291 ? { top: ` ${259 - offset / 2}px` } : { top: "117px" }} src='https://thumb.tildacdn.com/tild3366-6137-4864-a639-666262616331/-/resize/526x/-/format/webp/----05_07_2021_02.png' />
@@ -41,7 +40,7 @@ export default function SecondSlider() {
                 <div className='secondSliderSecondText'>
                     Отправьте МРТ исследование и получите наше экспертное мнение о возможности лечения
                 </div>
-                <Link href="/">
+                <Link href="/offemrt">
                     <button className='slick-btn'>
                         Отправить онлайн
                     </button>
