@@ -12,6 +12,8 @@ footer{
 }
 .footer_global{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #footer_img_Logo{
     height: 60px;
@@ -77,11 +79,6 @@ cursor: pointer;
     border-color: transparent;
     border-style: solid;
 }
-.footer_2block{
-    margin-left: 70px;
-    
-    
-}
 .footer_2block >p{
     color: #ffffff;
     font-size: 14px;
@@ -102,10 +99,6 @@ cursor: pointer;
     border-color: transparent;
     border-style: solid;
 }
-.footer_3block{
-    margin-left: 70px;
-    
-}
 .footer_3block >p{
     color: #ffffff;
     font-size: 14px;
@@ -125,10 +118,6 @@ cursor: pointer;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
-}
-.footer_4block{
-    margin-left: 70px;
-    
 }
 .footer_4block p{
     color: #ffffff;

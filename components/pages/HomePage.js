@@ -4,6 +4,9 @@ import MrtSlider from "../common/MrtSlider/MrtSlider";
 import mrtDesList from "../constants/mrt-slider-card-des";
 import cardList_terapy from "../constants/card-therapy";
 import Card_terapy from "../common/card_terapy/Card_terapy";
+import Link from "next/link";
+import MainSlider from "../common/Sliders/MainSlider"
+import {useState} from "react"
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -204,12 +207,10 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
-                </div>)
-
-            }
             <div className="container cardList_terapy_wrapper">
    {
            cardList_terapy.map((e)=> <Card_terapy 
+           key={e.button}
            img={e.img}
            title={e.title} 
            des1={e.des1} 
