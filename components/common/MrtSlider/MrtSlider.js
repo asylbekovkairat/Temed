@@ -1,7 +1,7 @@
-import Slider from "react-slick";
-import FirstSlider from "./firstSlider";
-import SecondSlider from "./secondSlider";
-import ThirdSlider from "./thirdSlider";
+import Slider from "react-slick/lib/slider";
+import mrtList from "../../constants/mrt-slider-card-list";
+import {useState} from "react"
+
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -17,27 +17,61 @@ function SampleNextArrow(props) {
     );
 }
 
-export default function MainSlider() {
+
+export default function MrtSlider({setActiveSlide}) {
+
     const settings = {
+        focusOnSelect: true,
         dots: false,
         infinite: true,
-        speed: 10,
-        slidesToShow: 1,
+        speed: 300,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
-        swipe: false,
+        centerMode: true,
+        centerPadding: '80px',
         prevArrow: <SamplePrevArrow />,
-        nextArrow: <SampleNextArrow />
-
+        nextArrow: <SampleNextArrow />,
+        afterChange: current => setActiveSlide(current),
+        responsive: [
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "115px"
+                }
+            },
+            {
+                breakpoint: 512,
+                settings: {
+                    slidesToShow: 1 ,
+                    centerPadding: '80px'
+                }
+            },
+            {
+                breakpoint: 350,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "60px"
+                }
+            }
+        ]
     };
+
     return (
-        <div className="slider-wrapper" >
+        <div>
             <Slider {...settings}>
-               <FirstSlider/>
-               <SecondSlider/>
-               <ThirdSlider/>               
+                {
+                    mrtList.map((e) =>
+                        <div key={e.title} className="mrt-card-wrapper">
+                            <img src={e.img} />
+                            <div>{e.title}</div>
+                        </div>
+                    )
+                }
             </Slider>
+            
         </div>
     )
 }

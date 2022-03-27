@@ -1,3 +1,7 @@
+.slider-wrapper{
+  display: block;
+  opacity: 1;
+}
 .slick-slider {
   height: 630px;
 }
@@ -298,6 +302,10 @@
 .adap{
     overflow: hidden;
 }
+.adap-wrapper{
+  display: none;
+  opacity: 0;
+}
 .adap-card{
     width: 100%;
 }
@@ -326,6 +334,10 @@
     display: flex;
 }
 @media(max-width: 980px){
+  .slider-wrapper{
+    display: none;
+    opacity: 0;
+  }
     .round-blue-border-wrapper-another{
         left: -120px;
         top: 460px;
@@ -337,6 +349,10 @@
     .secondSliderWrapper{
         width: 100%;
         padding: 5% 0 15px 50px;
+    }
+    .adap-wrapper{
+      display: block;
+      opacity: 1;
     }
 }
 @media(max-width: 512px){
