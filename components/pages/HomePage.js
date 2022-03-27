@@ -1,72 +1,168 @@
 import MainSlider from "../common/Sliders/MainSlider";
 import Link from "next/link"
+import { useState, useEffect } from "react"
 
 
 export default function HomePage() {
+
+    const [adap, setAdap] = useState(false);
+    useEffect(() => {
+        if (window.innerWidth > 980) {
+            setAdap(true)
+        }
+        else {
+            setAdap(false)
+        }
+    }, []);
+    const cardList = [
+        {
+            img: "https://static.tildacdn.com/tild6562-3863-4463-b165-396165333238/001-doctor.svg",
+            firstText: "Боли или прострелы",
+            text: "в спине, онемение или покалывание в руке или ноге?",
+            lastText: " Причиной может быть грыжа диска",
+            color: "white"
+        },
+        {
+            img: "https://static.tildacdn.com/tild6135-3734-4430-b433-343339353563/002-rank.svg",
+            firstText: "13 лет",
+            text: "лечим боли в спине и грыжи дисков. 9 из 10 пациентов",
+            lastText: " вылечились без операции",
+            color: "white"
+        },
+        {
+            img: "https://static.tildacdn.com/tild3538-3061-4638-a139-386237333131/003-diagnostic.svg",
+            firstText: "Подтверждаем ",
+            text: "результаты лечения с помощью снимков",
+            lastText: " МРТ до и после",
+            color: "white"
+        },
+        {
+            img: "https://static.tildacdn.com/tild3966-3832-4634-a261-663764316238/004-x-ray.svg",
+            firstText: "Знаем все о резорбции:",
+            text: "проводим исследования, публикуем доклады, участвуем в конференциях",
+            lastText: "",
+            color: "white"
+        }
+    ]
     return (
         <div>
-            <div className="authors">
-                <h2>Авторы метода модулируемой резорбции</h2>
-            </div>
-            <div className="container authorWrapper">
-                <div className="upperBlock">
-                    <img className="doctor" src="https://thumb.tildacdn.com/tild3831-3232-4332-b363-333637323532/-/cover/455x450/center/center/-/format/webp/Untitled-7_1.jpg" alt="doctor"/>
-                    <div className="description">
-                        <Link href="/">
-                            <div className="doctorName">Александр Ткачев
-                                <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow"/>
-                            </div>
-                        </Link>
-                        <div className="doctorProf">
-                            Невролог, рефлексотерапевт, физиотерапевт
-                        <br/>
-                        </div>
-                        <div className="doctorDes">
-                            Практик и ученый занимающийся исследованием дискогенной боли и механизмов резорбции грыжи.
-                            <br/>
-                            <br/>
-                            Занимается исследованием резорбции межпозвонковой грыжи диска с 2012 года.
-                            <br/>
-                            <br/>
-                            Регулярно публицируется в научных журналах. Активный участник авторитетных российский и международных медицинских сообществ (IASP, NASS, ESP)
-                        </div>
-                        <div className="companies">
-                            <img src="https://thumb.tildacdn.com/tild3365-3432-4031-b039-633231623065/-/resize/107x/-/format/webp/noroot.png" alt="ESR"/>
-                            <img src="https://thumb.tildacdn.com/tild6538-6166-4763-b436-323039643633/-/resize/158x/-/format/webp/IASP20Logo20270X98_1.png" alt="IASP"/>
-                            <img src="https://thumb.tildacdn.com/tild6536-3564-4531-b633-373637323363/-/resize/159x/-/format/webp/ECMSgEyQj69J36Botvgu.jpg" alt="NASS"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="lowerBlock">
-                    <div className="description">
-                        <Link href="#">
-                            <div className="doctorName">Антон Епифанов
-                                <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow"/>
-                            </div>
-                        </Link>
-                        <div className="doctorProf">
-                            Невролог, спортивный врач, мануальный терапевт
-                        <br/>
-                        </div>
-                        <div className="doctorDes">
-                            Специализируется на лечении неспецифических болей в спине, суставов, восстановлении после спортивных травм.
-                        <br/>
-                        <br/>
-                            Активный популяризатор медицинской науки. Успешный блогер: за 5 лет более 30 млн. просмотров на ютуб-канале
-                        </div>
-                        <Link href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ">
-                            <div className="youtube_links">
-                                <img className="doctor" src="https://thumb.tildacdn.com/tild3730-3834-4330-b336-663430313134/-/resize/66x/-/format/webp/kisspng-computer-ico.png" alt="yt"/>
-                                558k
-                                <br/>
-                                подписчиков
-                            </div>
-                        </Link>
-                    </div>
-                    <img src="https://thumb.tildacdn.com/tild6361-3039-4665-a566-303862663031/-/cover/455x450/center/center/-/format/webp/Untitled-8_1.jpg" alt=""/>
+            {
+                (adap ? <MainSlider /> : <div>
+                    <div className="adap">
+                        <div className=" thirdSlider">
+                            <div className='round-blue-border-wrapper-another'>
+                                <div className='round-border-under-wrapper'>
+                                    <div style={{ borderColor: "#0e7496" }} className='round-border'>
 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='secondSliderWrapper'>
+                                <div className='secondSliderText'>
+                                    Пациенты сами рассказывают
+                                    о своём лечении
+                                </div>
+                                <Link href="/">
+                                    <button className='slick-btn'>
+                                        Посмотреть вебинар
+                                    </button>
+                                </Link>
+                            </div>
+                            <div className="third-slider-wrapper">
+                                <img src='https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png' />
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div className='cards-wrapper adap-cards'>
+                        {
+                            cardList.map((e) =>
+                                <div style={{ backgroundColor: e.color }} key={e.text} className="cardWrapper adap-card">
+                                    <div className="adap-title-wrapper">
+                                        <img src={e.img} />
+                                        <span className="adap-card-first-text">{e.firstText}</span>
+                                    </div>
+                                    <div className="adap-text-wrapper">
+
+                                        <div className="adap-card-text">{e.text}
+                                            <span className="adap-card-last-text">
+                                                {e.lastText}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    </div>
+                </div>)
+            }
+            <div>
+                <div className="authors">
+                   <h2>Авторы метода модулируемой резорбции</h2>
+                </div>
+                <div className="container authorWrapper">
+                    <div className="upperBlock">
+                        <img className="doctor" src="https://thumb.tildacdn.com/tild3831-3232-4332-b363-333637323532/-/cover/455x450/center/center/-/format/webp/Untitled-7_1.jpg" alt="doctor"/>
+                        <div className="description">
+                            <Link href="/">
+                                <div className="doctorName">Александр Ткачев
+                                        <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow"/>
+                                </div>
+                            </Link>
+                            <div className="doctorProf">
+                                Невролог, рефлексотерапевт, физиотерапевт
+                                <br/>
+                            </div>
+                            <div className="doctorDes">
+                                Практик и ученый занимающийся исследованием дискогенной боли и механизмов резорбции грыжи.
+                                <br/>
+                                <br/>
+                                Занимается исследованием резорбции межпозвонковой грыжи диска с 2012 года.
+                                <br/>
+                                <br/>
+                                Регулярно публицируется в научных журналах. Активный участник авторитетных российский и международных медицинских сообществ (IASP, NASS, ESP)
+                            </div>
+                            <div className="companies">
+                                <img src="https://thumb.tildacdn.com/tild3365-3432-4031-b039-633231623065/-/resize/107x/-/format/webp/noroot.png" alt="ESR"/>
+                                <img src="https://thumb.tildacdn.com/tild6538-6166-4763-b436-323039643633/-/resize/158x/-/format/webp/IASP20Logo20270X98_1.png" alt="IASP"/>
+                                <img src="https://thumb.tildacdn.com/tild6536-3564-4531-b633-373637323363/-/resize/159x/-/format/webp/ECMSgEyQj69J36Botvgu.jpg" alt="NASS"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="lowerBlock">
+                        <div className="description">
+                            <Link href="#">
+                                <div className="doctorName">Антон Епифанов
+                                    <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow"/>
+                                </div>
+                            </Link>
+                            <div className="doctorProf">
+                                Невролог, спортивный врач, мануальный терапевт
+                                <br/>
+                            </div>
+                            <div className="doctorDes">
+                                Специализируется на лечении неспецифических болей в спине, суставов, восстановлении после спортивных травм.
+                                <br/>
+                                <br/>
+                                Активный популяризатор медицинской науки. Успешный блогер: за 5 лет более 30 млн. просмотров на ютуб-канале
+                            </div>
+                            <Link href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ">
+                                <div className="youtube_links">
+                                    <img src="https://thumb.tildacdn.com/tild3730-3834-4330-b336-663430313134/-/resize/66x/-/format/webp/kisspng-computer-ico.png" alt="yt"/>
+                                    558k
+                                    <br/>
+                                    подписчиков
+                                </div>
+                            </Link>
+                        </div>
+    
+                        <img className="lowerDoctor" src="https://thumb.tildacdn.com/tild6361-3039-4665-a566-303862663031/-/cover/455x450/center/center/-/format/webp/Untitled-8_1.jpg" alt=""/>
+                    </div>
                 </div>
             </div>
         </div>
-    )
+    ) 
 }
