@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/common/footer/Footer'
 import HomePage from '../components/pages/HomePage'
 import Footer from '../components/common/footer/Footer'
 

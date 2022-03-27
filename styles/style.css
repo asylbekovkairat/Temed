@@ -31,7 +31,11 @@
     max-width: 90%; 
   } 
 }
-
+.cardList_terapy_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 /* author method block */
 .doctor{
   border-radius: 500px;
