@@ -36,6 +36,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.therapy-title{
+      color: #4c4c4c;
+    font-size: 36px;
+    font-family: 'Rubik',Arial,sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: center;
+    margin: 60px 0;
+}
 /* author method block */
 .doctor{
   border-radius: 500px;

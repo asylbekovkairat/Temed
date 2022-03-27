@@ -207,19 +207,21 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+            <div className="therapy-title">Что мы лечим</div>
             <div className="container cardList_terapy_wrapper">
-   {
-           cardList_terapy.map((e)=> <Card_terapy 
-           key={e.button}
-           img={e.img}
-           title={e.title} 
-           des1={e.des1} 
-           des2={e.des2} 
-           span1={e.span1} 
-           des3={e.des3} 
-           span2={e.span2} 
-           des4={e.des4} 
-           button={e.button} 
+        {
+           cardList_terapy.map((e)=> 
+            <Card_terapy 
+                key={e.button}
+                img={e.img}
+                title={e.title} 
+                des1={e.des1} 
+                des2={e.des2} 
+                span1={e.span1} 
+                des3={e.des3} 
+                span2={e.span2} 
+                des4={e.des4} 
+                button={e.button} 
            />)
         }
             </div>
