@@ -5,7 +5,6 @@ import Link from "next/link"
 export default function HomePage() {
     return (
         <div>
-
             <div className="authors">
                 <h2>Авторы метода модулируемой резорбции</h2>
             </div>
