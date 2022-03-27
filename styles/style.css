@@ -2,32 +2,158 @@
   margin: 0;
   padding: 0;
 }
-.container {
-  max-width: 1140px;
-  width: 100%;
-  margin: 0 auto;
+
+.container { 
+  max-width: 1140px; 
+  width: 100%; 
+  margin: 0 auto; 
 }
-@media (max-width: 1200px) {
-  .container {
-    max-width: 996px;
-  }
+@media (max-width: 1200px) { 
+  .container { 
+    max-width: 996px; 
+  } 
+} 
+ 
+@media (max-width: 1140px) { 
+  .container { 
+    max-width: 840px; 
+  } 
+} 
+ 
+@media (max-width: 900px) { 
+  .container { 
+    max-width: 780px; 
+  } 
+} 
+ 
+@media (max-width: 800px) { 
+  .container { 
+    max-width: 90%; 
+  } 
 }
 
-@media (max-width: 1140px) {
-  .container {
-    max-width: 840px;
-  }
+/* author method block */
+.doctor{
+  border-radius: 500px;
+  height: 100%;
 }
 
-@media (max-width: 900px) {
-  .container {
-    max-width: 780px;
-  }
+.upperBlock{
+  display:flex;
 }
 
-@media (max-width: 800px) {
-  .container {
-    max-width: 90%;
+.description{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 30px ;
+}
+
+.doctorName{
+  display: flex;
+  color: #0e7496;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.55;
+  margin-top: 10px;
+}
+.doctorName:hover{
+  cursor:pointer;
+}
+.doctorProf{
+  color: #4c4c4c;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 400;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.doctorDes{
+  color: #4c4c4c;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.arrowRight{
+  display: block;
+  width: 25px; 
+  margin-left: 13px;
+  margin-top: 5px;
+}
+.arrowRight:hover{
+  cursor: pointer;
+}
+.companies{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+}
+.companies img:nth-of-type(1) {
+  width: 107px;
+  height: 65px;
+  margin-right: 10px;
+}
+.companies img:nth-of-type(2){
+  margin-right: 10px;
+  height: 65px;
+}
+.companies img:nth-of-type(3){
+  width: 159px; 
+}
+.lowerBlock{
+  display: flex;
+  margin-top: 50px;
+}
+.lowerBlock > img{
+  border-radius: 500px;
+}
+.youtube_links{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  color: #0e7496;
+}
+.youtube_links:hover{
+  cursor: pointer;
+}
+.authors{
+  display: flex;
+  align-items: center;
+  height: 135px;
+  justify-content: center;
+}
+.authors h2{
+  color: #4c4c4c;
+  font-size: 36px;
+  line-height: 1.55;
+  font-weight: 400;
+  font-family: 'Rubik',Arial,sans-serif;
+}
+@media (max-width: 960px) {
+  .authors{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .upperBlock{
+    flex-direction: column;
+    align-items: center;
+  }
+  .lowerBlock{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 512px){
+  .companies{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .doctor{
+    width: 80%;
+  }
+  .lowerDoctor{
+    width: 80%;
   }
 }
 
