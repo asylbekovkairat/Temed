@@ -1,13 +1,16 @@
-import MainSlider from "../common/Sliders/MainSlider";
-import Link from "next/link"
-import { useState, useEffect } from "react"
+
 import mainSliderCardList from "../constants/main-slider-card-list";
 import MrtSlider from "../common/MrtSlider/MrtSlider";
 import mrtDesList from "../constants/mrt-slider-card-des";
-
+import cardList_terapy from "../constants/card-therapy";
+import Card_terapy from "../common/card_terapy/Card_terapy";
+import Link from "next/link";
+import MainSlider from "../common/Sliders/MainSlider"
+import {useState} from "react"
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
+
     return (
         <div>
             <MainSlider />
@@ -226,6 +229,24 @@ export default function HomePage() {
                         <img className="lowerDoctor" src="https://thumb.tildacdn.com/tild6361-3039-4665-a566-303862663031/-/cover/455x450/center/center/-/format/webp/Untitled-8_1.jpg" alt=""/>
                     </div>
                 </div>
+            </div>
+            <div className="therapy-title">Что мы лечим</div>
+            <div className="container cardList_terapy_wrapper">
+        {
+           cardList_terapy.map((e)=> 
+            <Card_terapy 
+                key={e.button}
+                img={e.img}
+                title={e.title} 
+                des1={e.des1} 
+                des2={e.des2} 
+                span1={e.span1} 
+                des3={e.des3} 
+                span2={e.span2} 
+                des4={e.des4} 
+                button={e.button} 
+           />)
+        }
             </div>
         </div>
     ) 
