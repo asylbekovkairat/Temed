@@ -50,7 +50,9 @@
   border-radius: 500px;
   height: 100%;
 }
-
+.authorWrapper{
+  margin-bottom: 55px;
+}
 .upperBlock{
   display:flex;
 }
@@ -136,6 +138,7 @@
   display: flex;
   align-items: center;
   height: 135px;
+  margin-bottom: 45px;
   justify-content: center;
 }
 .authors h2{
@@ -144,6 +147,37 @@
   line-height: 1.55;
   font-weight: 400;
   font-family: 'Rubik',Arial,sans-serif;
+}
+.about{
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 95px;
+  justify-content: space-around;
+}
+.first_about{
+  width: 55%;
+  color: #4c4c4c;
+  font-size: 32px;
+  font-family: 'Rubik',Arial,sans-serif;
+  line-height: 1.25;
+  font-weight: 300;
+}
+.first_about span{
+  background: linear-gradient(to bottom, white 50%, rgb(229, 253, 253) 50%);
+}
+.second_about{
+  width: 65%;
+  color: #4c4c4c;
+  font-size: 17px;
+  font-family: 'Rubik',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 300;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.second_about span{
+  color: rgb(150, 14, 116);
 }
 @media (max-width: 960px) {
   .authors{
@@ -171,6 +205,21 @@
     width: 80%;
   }
 }
+@media (max-width: 960px){
+  .about{
+    flex-direction: column; 
+  }
+  .first_about{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .second_about{
+    width: 100%;
+  }
+}
+
+
+/* end of author method block */
 
 /* start of mrt */
 
@@ -309,8 +358,12 @@
   display: flex;
   justify-content: space-between;
 }
+.mrt-section{
+  background-color: #f5f7fa;
+}
 .mrt-before-des {
   width: 45%;
+  margin-bottom: 92px;
 }
 .mrt-after-des {
   width: 45%;

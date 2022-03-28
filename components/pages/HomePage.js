@@ -65,7 +65,7 @@ export default function HomePage() {
                     }
                 </div>
             </div>
-            <section>
+            <section className="mrt-section">
                 <div className="container">
                     <div className="mrt">
                         <img src="https://static.tildacdn.com/tild3962-3363-4530-b466-386339303338/chiropractor-concept.jpg" />
@@ -119,7 +119,6 @@ export default function HomePage() {
                                     </div>
                                 )
                             }
-
                         </div>
                         <div className="mrt-after-des">
                             <div className="mrt-btn mrt-blue">
@@ -144,6 +143,30 @@ export default function HomePage() {
              </div>
             </section>           
             <div>
+                <div className="container about">
+                    <div className="first_about">
+                        Мы -{" "}
+                        <span>первая российская клиника</span>
+                        , которая стала применять резорбцию межпозвонковой грыжи диска  
+                    </div>
+                    <div className="second_about">
+                        <span>
+                            <strong>
+                                Резорбция - процесс уменьшения грыжи диска за счет естественных физиологических способностей организма. 
+                            </strong>
+                        </span>
+                         
+                        Это основа эффективного лечения грыжи и 
+                        <u> альтернатива операции</u>
+                        .
+                        <br/>
+                        <br/>
+                        Метод модулируемой резорбции Ткачева-Епифанова позволяет
+                        <u> ускорить </u>
+                        этот 
+                        <u> процесс, взять боль под контроль и улучшить качество жизни.</u> 
+                    </div>
+                </div>
                 <div className="authors">
                    <h2>Авторы метода модулируемой резорбции</h2>
                 </div>
@@ -228,3 +251,5 @@ export default function HomePage() {
         </div>
     ) 
 }
+
+
