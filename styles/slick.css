@@ -1,3 +1,7 @@
+.slider-wrapper {
+  display: block;
+  opacity: 1;
+}
 .slick-slider {
   height: 630px;
 }
@@ -33,10 +37,10 @@
   z-index: 10;
 }
 .slick-prev:hover {
-  background: rgb(253, 72, 17) !important;
+  background-color: #ff685a !important;
 }
 .slick-next:hover {
-  background: rgb(253, 72, 17) !important;
+  background-color: #ff685a !important;
 }
 .slick-prev:before {
   content: "" !important;
@@ -295,11 +299,15 @@
   align-items: center;
   background: white;
 }
-.adap{
-    overflow: hidden;
+.adap {
+  overflow: hidden;
 }
-.adap-card{
-    width: 100%;
+.adap-wrapper {
+  display: none;
+  opacity: 0;
+}
+.adap-card {
+  width: 100%;
 }
 .adap-card-first-text {
   color: #0e7496;
@@ -307,7 +315,7 @@
   font-weight: 400;
   font-family: "Rubik";
 }
-.adap-card{
+.adap-card {
   color: #4c4c4c;
   font-size: 16px;
   font-family: "Rubik", Arial, sans-serif;
@@ -318,37 +326,45 @@
   font-weight: 600 !important;
   font-size: 15px !important;
 }
-.adap-title-wrapper{
-    display: flex;
-    align-items: center;
+.adap-title-wrapper {
+  display: flex;
+  align-items: center;
 }
-.adap-text-wrapper{
-    display: flex;
+.adap-text-wrapper {
+  display: flex;
 }
-@media(max-width: 980px){
-    .round-blue-border-wrapper-another{
-        left: -120px;
-        top: 460px;
-    }
-    .third-slider-wrapper{
-        top: 35%;
-        right: 15%;
-    }
-    .secondSliderWrapper{
-        width: 100%;
-        padding: 5% 0 15px 50px;
-    }
+@media (max-width: 980px) {
+  .slider-wrapper {
+    display: none;
+    opacity: 0;
+  }
+  .round-blue-border-wrapper-another {
+    left: -120px;
+    top: 460px;
+  }
+  .third-slider-wrapper {
+    top: 35%;
+    right: 15%;
+  }
+  .secondSliderWrapper {
+    width: 100%;
+    padding: 5% 0 15px 50px;
+  }
+  .adap-wrapper {
+    display: block;
+    opacity: 1;
+  }
 }
-@media(max-width: 512px){
-    .third-slider-wrapper{
-        top: 45%;
-        right: 0;
-        width: 100%;
-    }
-    .secondSliderText{
-        font-size: 35px;
-    }
-    .secondSliderWrapper{
-        padding: 5% 0 15px 20px;
-    }
+@media (max-width: 512px) {
+  .third-slider-wrapper {
+    top: 45%;
+    right: 0;
+    width: 100%;
+  }
+  .secondSliderText {
+    font-size: 35px;
+  }
+  .secondSliderWrapper {
+    padding: 5% 0 15px 20px;
+  }
 }
