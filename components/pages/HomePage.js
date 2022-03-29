@@ -9,7 +9,6 @@ import MainSlider from "../common/Sliders/MainSlider"
 import {useState} from "react"
 import Review from "../common/review/Review";
 import ReviewList from "../constants/Reviews-info";
-import { useState } from "react"
 import YouTubeSlider from "../common/youtube-slider/YouTubeSlider";
 import TreatmentCourse from "../common/TreatmentCourse/mainCard/TreatmentCourse";
 import reviewCard from "../constants/review-card";
@@ -302,6 +301,7 @@ export default function HomePage() {
                     {
                     ReviewList.map((e)=>
                         <Review
+                            key={e.title}
                             img={e.img}
                             title={e.title}
                             starEmpty={e.starEmpty}
