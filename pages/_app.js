@@ -5,7 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/tilda.css"
 import "../styles/slick.css"
+import "../styles/treatmentCourse.css"
+import '../styles/modal.css'
 import '../styles/footer.css'
+import '../styles/review.css'
 
 
 function MyApp({ Component, pageProps }) {
