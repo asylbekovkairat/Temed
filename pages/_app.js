@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/tilda.css"
 import "../styles/slick.css"
 import '../styles/footer.css'
-
+import '../styles/review.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
