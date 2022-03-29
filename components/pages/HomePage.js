@@ -7,6 +7,8 @@ import Card_terapy from "../common/card_terapy/Card_terapy";
 import Link from "next/link";
 import MainSlider from "../common/Sliders/MainSlider"
 import {useState} from "react"
+import Review from "../common/review/Review";
+import ReviewList from "../constants/Reviews-info";
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -247,6 +249,23 @@ export default function HomePage() {
                 button={e.button} 
            />)
         }
+            </div>
+            <div className="Reviews-Wrapper">
+                <h2> Отзывы и рейтинги</h2>
+                <div className="Reviews-Content">
+                    {
+                    ReviewList.map((e)=>
+                        <Review
+                            img={e.img}
+                            title={e.title}
+                            starEmpty={e.starEmpty}
+                            starFull={e.StarFull}
+                            reviews={e.reviews}
+                            rating={e.rating}
+                            btnReview={e.btnReview}
+                        />)
+                    }
+                </div>
             </div>
         </div>
     ) 
