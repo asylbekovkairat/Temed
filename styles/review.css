@@ -42,7 +42,6 @@
 .review-main-content {
   width: 100%;
   height: 600px;
-  margin-bottom: 50px;
 }
 .review-main-content-first-info {
   display: flex;
@@ -99,4 +98,20 @@
     border-style: solid;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
       border-color 0.2s ease-in-out;
+}
+@media(max-width: 512px){
+  .review-main-content{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+
+  }
+  .review-main-content-first-info{
+    width: 300px;
+  }
+  .review-block{
+    flex-wrap: wrap;
+    padding: 25px 15px;
+    height: fit-content;
+  }
 }
