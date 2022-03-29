@@ -1,4 +1,3 @@
-
 import mainSliderCardList from "../constants/main-slider-card-list";
 import MrtSlider from "../common/MrtSlider/MrtSlider";
 import mrtDesList from "../constants/mrt-slider-card-des";
@@ -8,12 +7,13 @@ import Link from "next/link";
 import MainSlider from "../common/Sliders/MainSlider"
 import { useState } from "react"
 import YouTubeSlider from "../common/youtube-slider/YouTubeSlider";
+import TreatmentCourse from "../common/TreatmentCourse/mainCard/TreatmentCourse";
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
     const [youtubeActive, setYouTubeActive] = useState(false)
     const [youtubeUrl, setYouTubeUrl] = useState("")
-
+    const [id,setId]= useState(0)
 
     return (
         <div>
@@ -252,7 +252,25 @@ export default function HomePage() {
                     <YouTubeSlider setYouTubeUrl={setYouTubeUrl} setYouTubeActive={setYouTubeActive} />
                 </div>
             </div>
-
+        <div className="container">
+        <div className="treatmentCourseSection">
+          <div className="treatmentDescription">
+            <h1 style={{ color: "#868a91" }}>Что входит в курс лечения</h1>
+          </div>
+            <div className="treatmentText">
+              <span style={{ color: "#868a91" }}>
+                  Метод модулируемой резорбции включает в себя комплекс процедур. Мы
+                  лечим боль в спине и суставах используя физиотерапию. Применяем
+                  медикаменты, опираясь на международные протоколы. Все процедуры и
+                  манипуляции выполняют только врачи, имеющую необходимую
+                  квалификацию и аккредитацию.
+               </span>
+              </div>
+              <div className="treatmentBlock">
+                 <TreatmentCourse id={id} setId={setId} />
+               </div>
+              </div>
+            </div>
             <div className="therapy-title">Что мы лечим</div>
             <div className="container cardList_terapy_wrapper">
                 {
