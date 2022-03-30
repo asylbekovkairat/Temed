@@ -7,7 +7,6 @@ import Link from "next/link";
 import MainSlider from "../common/Sliders/MainSlider"
 import cardList_specialists from "../constants/card-specialists";
 import Card_specialists from "../common/card_specialists/card_specialists";
-import { useState } from "react"
 import Review from "../common/review/Review";
 import ReviewList from "../constants/Reviews-info";
 import YouTubeSlider from "../common/youtube-slider/YouTubeSlider";
