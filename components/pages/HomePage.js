@@ -15,6 +15,8 @@ import reviewCard from "../constants/review-card";
 import PhoneInput from "react-phone-input-2";
 import {useState, useEffect} from "react"
 import {db} from "../../config/firebase.js"
+import RegToWeb from "../common/RegToWeb/regToWeb";
+
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -455,14 +457,15 @@ export default function HomePage() {
                         }
 
                     </div>
-
-
                 </div>
                 <div style={{ marginBottom: "25px", display: "flex", justifyContent: "center" }}>
                     <Link href="/">
                         <button className="btn btn-blue">Больше отзывов</button>
                     </Link>
                 </div>
+            </div>
+<div className="RegToWeb-Wrapper">
+                    <RegToWeb />
             </div>
             <div className="container-block-callMe">
                 <div className="container">
