@@ -9,7 +9,7 @@ import MainSlider from "../common/Sliders/MainSlider"
 import {useState} from "react"
 import Review from "../common/review/Review";
 import ReviewList from "../constants/Reviews-info";
-
+import RegToWeb from "../common/RegToWeb/regToWeb";
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
 
@@ -266,6 +266,9 @@ export default function HomePage() {
                         />)
                     }
                 </div>
+            </div>
+            <div className="RegToWeb-Wrapper">
+                    <RegToWeb />
             </div>
         </div>
     ) 
