@@ -1022,7 +1022,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
 }
 
 .RegToWeb-Content {
@@ -1033,7 +1032,7 @@
   justify-content: space-between;
   border: 1px solid #0e7496;
   border-radius: 10px;
-  height: 82px;
+  height: 120px;
 }
 
 .RegToWeb-Content img {
