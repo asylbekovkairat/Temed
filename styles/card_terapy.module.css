@@ -43,3 +43,18 @@ margin-bottom: 10px;
     line-height: 1.55;
     color: #4c4c4c;
 }
+.card_block2 > button{
+    color: #0e7496;
+    border: 1px solid #0e7496;
+    border-radius: 30px;
+    font-weight: 400;
+    height: 45px;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    bottom:30px;
+}
+
+
+

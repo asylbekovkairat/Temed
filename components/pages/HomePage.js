@@ -6,12 +6,15 @@ import cardList_terapy from "../constants/card-therapy";
 import Card_terapy from "../common/card_terapy/Card_terapy";
 import Link from "next/link";
 import MainSlider from "../common/Sliders/MainSlider"
+import cardList_specialists from "../constants/card-specialists";
+import Card_specialists from "../common/card_specialists/card_specialists";
 import {useState} from "react"
 import Review from "../common/review/Review";
 import ReviewList from "../constants/Reviews-info";
 import YouTubeSlider from "../common/youtube-slider/YouTubeSlider";
 import TreatmentCourse from "../common/TreatmentCourse/mainCard/TreatmentCourse";
 import reviewCard from "../constants/review-card";
+
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -295,6 +298,26 @@ export default function HomePage() {
                         />)
                 }
             </div>
+
+            <div className='container card_specialists'>
+
+                <div className='card_specialists_block1'>
+                    <p id="title">Специалисты нашей клиники</p>
+                    <button id="button">Записатья к врачу</button>
+                </div>
+
+                <div className="container cardList_specialists_wrapper">
+                {
+                    cardList_specialists.map((e) =>
+                        <Card_specialists
+                            key={e.button}
+                            {...e}
+                        />
+                    )
+                }
+            </div>
+
+
             <div className="Reviews-Wrapper">
                 <h2> Отзывы и рейтинги</h2>
                 <div className="Reviews-Content">
@@ -371,6 +394,7 @@ export default function HomePage() {
                     </Link>
                 </div>
             </div>
+
         </div>
     )
 }
