@@ -14,6 +14,7 @@ import TreatmentCourse from "../common/TreatmentCourse/mainCard/TreatmentCourse"
 import reviewCard from "../constants/review-card";
 import PhoneInput from "react-phone-input-2";
 import {useState, useEffect} from "react"
+import Mrt from "../common/mrt/mrt";
 import {db} from "../../config/firebase.js"
 
 export default function HomePage() {
@@ -87,21 +88,9 @@ export default function HomePage() {
                     ))}
                 </div>
             </div>
+            <Mrt/>
             <section className="mrt-section">
                 <div className="container">
-                    <div className="mrt">
-                        <img src="https://static.tildacdn.com/tild3962-3363-4530-b466-386339303338/chiropractor-concept.jpg" />
-                        <div className="mrt-text-wrapper">
-                            <div className="mrt-text">
-                                <h3>Получите онлайн-консультацию по снимкам МРТ</h3>
-                                <div>
-                                    Вы узнаете можно ли вылечить грыжу без операции в нашей
-                                    клинике
-                                </div>
-                            </div>
-                            <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
-                        </div>
-                    </div>
                     <div className="mrt-title-slider-wrapper">
                         <div className="mrt-title">
                             <h1>Наши результаты, которыми мы гордимся</h1>
