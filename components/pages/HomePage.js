@@ -25,7 +25,10 @@ export default function HomePage() {
 
     return (
         <div>
+            {/* MainSlider */}
             <MainSlider />
+
+            {/* adap-slider */}
             <div className="adap-wrapper">
                 <div className="adap">
                     <div className=" thirdSlider">
@@ -87,6 +90,7 @@ export default function HomePage() {
                     ))}
                 </div>
             </div>
+            
             <section className="mrt-section">
                 <div className="container">
                     <div className="mrt">
@@ -102,6 +106,7 @@ export default function HomePage() {
                             <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
                         </div>
                     </div>
+
                     <div className="mrt-title-slider-wrapper">
                         <div className="mrt-title">
                             <h1>Наши результаты, которыми мы гордимся</h1>
@@ -484,7 +489,7 @@ export default function HomePage() {
                                         className="callMe-form-name-input"
                                         placeholder="Номер телефона"
                                         country={"kg"}
-                                        value={phone}
+                                        value={"phone"}
                                         onChange={(phone) => setPhone({ phone })}
                                     />
                                 </div>
