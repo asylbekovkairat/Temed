@@ -243,7 +243,8 @@ export default function HomePage() {
                         <Card_specialists
                             key={e.button}
                             {...e}
-                        />)
+                        />
+                    )
                 }
             </div>
 
