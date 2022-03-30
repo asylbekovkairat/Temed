@@ -217,6 +217,53 @@
     width: 100%;
   }
 }
+.consult_block{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.consult_block img{
+  position: absolute;
+  border-radius: 30px;
+  left: 0px; 
+  bottom: 20px;
+}
+.consult_des{
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  height: 265px;
+  border: 2px #d7dbe0 solid;
+  border-radius: 20px;
+  align-items: center;
+}
+.consult_des div{
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 140px;
+}
+.consult_des div h3{
+  color: #4c4c4c;
+  font-size: 24px;
+  font-family: 'Rubik',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.consult_des div p{
+  color: #4c4c4c;
+  font-size: 16px;
+  font-family: 'Rubik',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 300;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
 
 
 /* end of author method block */
@@ -502,3 +549,69 @@
   }
 }
 /* end of mrt */
+
+/* start carrier block */
+
+.carrier_wrapper{
+  height: 810px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.start_carrier{
+  position: absolute;
+  left: -1100.5px;
+  top: 152px;
+  width: 260px;
+}
+.end_carrier{
+  position: absolute;
+  top: 152px;
+  width: 260px;
+  top: 152px;
+  right: -1000px;
+}
+.center_carrier{
+  width: 560px;
+  height: 620px;
+  left: 1349.5px;
+  margin: 0 30px ;
+}
+
+/* end carrier block */
+
+
+/* city wrapper start */
+
+.city_wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.city_address div{
+  color: #0e7496;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.city_address img{
+  height: 100px;
+  weight: 100px;
+}
+.clinic{
+  padding-top: 45px;
+}
+.clinic h3{
+  text-align: center;
+  color: #4c4c4c;
+  font-size: 30px;
+  font-weight: 400;
+}
+.clinic h3 div{
+  line-height: 24px;
+}
+/* city wrapper end */
