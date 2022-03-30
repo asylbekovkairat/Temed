@@ -6,7 +6,9 @@ import cardList_terapy from "../constants/card-therapy";
 import Card_terapy from "../common/card_terapy/Card_terapy";
 import Link from "next/link";
 import MainSlider from "../common/Sliders/MainSlider"
-import {useState} from "react"
+import { useState } from "react"
+import cardList_specialists from "../constants/card-specialists";
+import Card_specialists from "../common/card_specialists/card_specialists";
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -71,16 +73,16 @@ export default function HomePage() {
                         <img src="https://static.tildacdn.com/tild3962-3363-4530-b466-386339303338/chiropractor-concept.jpg" />
                         <div className="mrt-text-wrapper">
                             <div className="mrt-text">
-                            <h3>
-                                Получите онлайн-консультацию по снимкам МРТ
-                            </h3>
-                            <div>
-                                Вы узнаете можно ли вылечить грыжу без операции в нашей клинике
+                                <h3>
+                                    Получите онлайн-консультацию по снимкам МРТ
+                                </h3>
+                                <div>
+                                    Вы узнаете можно ли вылечить грыжу без операции в нашей клинике
+                                </div>
                             </div>
+                            <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
                         </div>
-                        <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
-                        </div>
-                        
+
                     </div>
 
                     <div className="mrt-title-slider-wrapper">
@@ -141,38 +143,38 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-             </div>
-            </section>           
+                </div>
+            </section>
             <div>
                 <div className="authors">
-                   <h2>Авторы метода модулируемой резорбции</h2>
+                    <h2>Авторы метода модулируемой резорбции</h2>
                 </div>
                 <div className="container authorWrapper">
                     <div className="upperBlock">
-                        <img className="doctor" src="https://thumb.tildacdn.com/tild3831-3232-4332-b363-333637323532/-/cover/455x450/center/center/-/format/webp/Untitled-7_1.jpg" alt="doctor"/>
+                        <img className="doctor" src="https://thumb.tildacdn.com/tild3831-3232-4332-b363-333637323532/-/cover/455x450/center/center/-/format/webp/Untitled-7_1.jpg" alt="doctor" />
                         <div className="description">
                             <Link href="/">
                                 <div className="doctorName">Александр Ткачев
-                                        <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow"/>
+                                    <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow" />
                                 </div>
                             </Link>
                             <div className="doctorProf">
                                 Невролог, рефлексотерапевт, физиотерапевт
-                                <br/>
+                                <br />
                             </div>
                             <div className="doctorDes">
                                 Практик и ученый занимающийся исследованием дискогенной боли и механизмов резорбции грыжи.
-                                <br/>
-                                <br/>
+                                <br />
+                                <br />
                                 Занимается исследованием резорбции межпозвонковой грыжи диска с 2012 года.
-                                <br/>
-                                <br/>
+                                <br />
+                                <br />
                                 Регулярно публицируется в научных журналах. Активный участник авторитетных российский и международных медицинских сообществ (IASP, NASS, ESP)
                             </div>
                             <div className="companies">
-                                <img src="https://thumb.tildacdn.com/tild3365-3432-4031-b039-633231623065/-/resize/107x/-/format/webp/noroot.png" alt="ESR"/>
-                                <img src="https://thumb.tildacdn.com/tild6538-6166-4763-b436-323039643633/-/resize/158x/-/format/webp/IASP20Logo20270X98_1.png" alt="IASP"/>
-                                <img src="https://thumb.tildacdn.com/tild6536-3564-4531-b633-373637323363/-/resize/159x/-/format/webp/ECMSgEyQj69J36Botvgu.jpg" alt="NASS"/>
+                                <img src="https://thumb.tildacdn.com/tild3365-3432-4031-b039-633231623065/-/resize/107x/-/format/webp/noroot.png" alt="ESR" />
+                                <img src="https://thumb.tildacdn.com/tild6538-6166-4763-b436-323039643633/-/resize/158x/-/format/webp/IASP20Logo20270X98_1.png" alt="IASP" />
+                                <img src="https://thumb.tildacdn.com/tild6536-3564-4531-b633-373637323363/-/resize/159x/-/format/webp/ECMSgEyQj69J36Botvgu.jpg" alt="NASS" />
                             </div>
                         </div>
                     </div>
@@ -180,51 +182,73 @@ export default function HomePage() {
                         <div className="description">
                             <Link href="#">
                                 <div className="doctorName">Антон Епифанов
-                                    <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow"/>
+                                    <img className="arrowRight" src="https://static.tildacdn.com/tild3764-6535-4965-b831-613230383538/right-arrow1.svg" alt="arrow" />
                                 </div>
                             </Link>
                             <div className="doctorProf">
                                 Невролог, спортивный врач, мануальный терапевт
-                                <br/>
+                                <br />
                             </div>
                             <div className="doctorDes">
                                 Специализируется на лечении неспецифических болей в спине, суставов, восстановлении после спортивных травм.
-                                <br/>
-                                <br/>
+                                <br />
+                                <br />
                                 Активный популяризатор медицинской науки. Успешный блогер: за 5 лет более 30 млн. просмотров на ютуб-канале
                             </div>
                             <Link href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ">
                                 <div className="youtube_links">
-                                    <img src="https://thumb.tildacdn.com/tild3730-3834-4330-b336-663430313134/-/resize/66x/-/format/webp/kisspng-computer-ico.png" alt="yt"/>
+                                    <img src="https://thumb.tildacdn.com/tild3730-3834-4330-b336-663430313134/-/resize/66x/-/format/webp/kisspng-computer-ico.png" alt="yt" />
                                     558k
-                                    <br/>
+                                    <br />
                                     подписчиков
                                 </div>
                             </Link>
                         </div>
-    
-                        <img className="lowerDoctor" src="https://thumb.tildacdn.com/tild6361-3039-4665-a566-303862663031/-/cover/455x450/center/center/-/format/webp/Untitled-8_1.jpg" alt=""/>
+
+                        <img className="lowerDoctor" src="https://thumb.tildacdn.com/tild6361-3039-4665-a566-303862663031/-/cover/455x450/center/center/-/format/webp/Untitled-8_1.jpg" alt="" />
                     </div>
                 </div>
             </div>
             <div className="therapy-title">Что мы лечим</div>
             <div className="container cardList_terapy_wrapper">
-        {
-           cardList_terapy.map((e)=> 
-            <Card_terapy 
-                key={e.button}
-                img={e.img}
-                title={e.title} 
-                des1={e.des1} 
-                des2={e.des2} 
-                span1={e.span1} 
-                des3={e.des3} 
-                span2={e.span2} 
-                des4={e.des4} 
-                button={e.button} 
-           />)
-        }
+                {
+                    cardList_terapy.map((e) =>
+                        <Card_terapy
+                            key={e.button}
+                            img={e.img}
+                            title={e.title}
+                            des1={e.des1}
+                            des2={e.des2}
+                            span1={e.span1}
+                            des3={e.des3}
+                            span2={e.span2}
+                            des4={e.des4}
+                            button={e.button}
+                        />)
+                }
             </div>
+
+
+
+            <div className='container card_specialists'>
+
+                <div className='card_specialists_block1'>
+                    <p id="title">Специалисты нашей клиники</p>
+                    <button id="button">Записатья к врачу</button>
+                </div>
+
+                <div className="container cardList_specialists_wrapper">
+                {
+                    cardList_specialists.map((e) =>
+                        <Card_specialists
+                            key={e.button}
+                            {...e}
+                        />)
+                }
+            </div>
+
+            </div>
+
         </div>
-    ) 
+    )
 }
