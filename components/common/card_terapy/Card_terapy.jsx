@@ -20,7 +20,7 @@ export default function Card_terapy({ img, title, des1, des2, span1, des3, span2
                 <span className={css.p2_span}>{span2}</span>
                 <p className={css.p2}>{des3}</p>
                 <p className={css.p2}>{des4}</p>
-                <button>
+                <button className='btn btn-white therapy-btn'>
                     {button}
                 </button>
             </div>

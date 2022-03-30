@@ -1,0 +1,66 @@
+.card{
+    padding: 28px;
+    margin-left: 10px;
+   
+    width: 310px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    border-color: #ccd7e8;
+    border-style: solid;
+    box-shadow: 0px 0px 30px 0px rgb(76 76 76 / 20%);
+}
+#title{
+    
+    color: #0e7496;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 500;
+    background-position: center center;
+}
+#description:hover{
+
+    color: #0e7496;
+}
+#description{
+    margin-top: 15px;
+    color: #4c4c4c;
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    
+}
+#button{
+    margin-top: 20px;
+    width: 154px;
+    height: 32px;
+    color: #0e7496;
+    font-size: 14px;
+    font-family: 'Rubik',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    border-color: #0e7496;
+    border-style: solid; 
+}
+#button:hover{
+background-color:#0e7496;
+
+}
+#button:hover{
+    color: #ffffff;
+}
+@media (min-width:359px) and (max-width:893px){
+.card{
+    margin-top: 20px;
+    margin-left: 20px;
+    height:fit-content
+}
+}
+@media(max-width: 512px){
+    .card{
+        margin-bottom: 25px;
+    }
+}
