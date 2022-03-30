@@ -1,0 +1,253 @@
+.container-block-callMe{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  margin-bottom: 50px;
+}
+.callMe-form-block {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-top: 100px;
+  padding: 20px;
+  z-index: 1;
+}
+.callMe-form-header-text {
+  font-size: 32px;
+  line-height: 1.17;
+  color: #4c4c4c;
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.callMe-form-text-description {
+  color: #4c4c4c;
+  font-size: 17px;
+  font-family: "Rubik", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 300;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 550px;
+}
+.callMe-form-phone-number {
+  width: 100%;
+  z-index: 1;
+  margin-top: 40px;
+}
+.callMe-form-phone-number-input {
+  color: #4d4d4d;
+  font-weight: 400;
+  font-family: "Rubik";
+  font-size: 15px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.callMe-form-phone-number-input input {
+  padding-left: 20px;
+  align-items: center;
+}
+
+.callMe-form-name-input {
+  color: #000;
+  border: 1px solid #c2c2c2;
+  background-color: #fff;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  font-size: 15px;
+  font-weight: 300;
+  height: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.callMe-form-btn {
+  cursor: pointer;
+  height: 50px;
+  padding: 0 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Rubik", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #0e7496;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+  border-color 0.2s ease-in-out;
+  margin-left: 30px;
+  margin-top: 19px;
+}
+
+.callMe-form-footer {
+  color: #666666;
+  font-size: 13px;
+  font-family: "Rubik", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 300;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 500px;
+  margin-top: 20px;
+}
+.callMe-form-img {
+  text-align: right;
+  transform: translate(-5%, -150%);
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 960px) {
+  .callMe-form-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .callMe-form-img {
+    position: absolute;
+    text-align: right;
+    transform: translate(-5%, -310%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-top: 100px;
+  }
+  .callMe-form-header-text {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .callMe-form-text-description {
+    text-align: center;
+    width: auto;
+  }
+  .callMe-form-phone-number-input {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+  }
+  .callMe-form-name-input {
+    width: 250px;
+    
+  }
+  .callMe-form-footer {
+    text-align: center;
+    width: auto;
+  }
+  .callMe-form-btn{
+    color: #fff;
+    background-color: #0e7496;
+    border-radius: 33px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    width: 220px;
+    height: 50px;
+    padding: 0 15px;
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .callMe-form-img {
+    position: absolute;
+    text-align: right;
+    transform: translate(4%, -390%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-top: 100px;
+  }
+  .callMe-form-btn{
+    color: #fff;
+    background-color: #0e7496;
+    border-radius: 33px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    width: 220px;
+    height: 50px;
+    padding: 0 15px;
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .callMe-form-img {
+    text-align: right;
+    position: absolute;
+    transform: translate(0%, -350%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 740px) {
+  .callMe-form-img {
+    position: absolute;
+    text-align: right;
+    transform: translate(0%, -350%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .callMe-form-btn{
+    color: #fff;
+    background-color: #0e7496;
+    border-radius: 33px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    width: 220px;
+    height: 50px;
+    padding: 0 15px;
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .callMe-form-btn{
+    color: #fff;
+    background-color: #0e7496;
+    border-radius: 33px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    width: 220px;
+    height: 50px;
+    padding: 0 15px;
+    display: block;
+  }
+}
+
+.react-tel-input .form-control{
+  border: none !important;
+}
+.react-tel-input {
+  display: flex;
+  align-items: center !important;
+  width: 250px !important;
+}
+.react-tel-input .flag-dropdown{
+  border: none !important;
+}

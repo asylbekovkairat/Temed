@@ -1,0 +1,116 @@
+.treatmentCourseSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.treatmentDescription {
+  margin-bottom: 30px;
+}
+
+.treatmentText {
+  color: #4c4c4c;
+  font-size: 18px;
+  font-family: "Rubik", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 300;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  text-align: center;
+}
+
+/* cards style  */
+
+.treatmentBlock {
+  display: flex;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 400px);
+  grid-gap: 40px 40px;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.button-container button {
+  border: none;
+  opacity: 0;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  align-items: left;
+  top: 360px;
+  left: calc(46% - 100px);
+  transition: all 0.8s ease-in-out;
+  color: #ffffff;
+  background-color: #ff685a;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.tr-block:hover .button-container button {
+  opacity: 1;
+  transform: translateY(-140px);
+}
+
+.scaleImg {
+  display: inline-block;
+  overflow: hidden;
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+.scaleImg:hover {
+  transform: scale(1.2);
+}
+.tr-block {
+  position: relative;
+  width: 300px;
+  height: 340px;
+  transition: 1s;
+  overflow: hidden;
+}
+.treatmentCards {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4)
+  );
+  padding: 40px;
+  font-size: 110%;
+  color: white;
+text-align: left;
+  cursor: pointer;
+  object-fit: cover;
+}
+.position-rage {
+  /* padding-bottom: 150px; */
+  pointer-events: none;
+}
+@media(max-width: 960px){
+  .treatmentBlock{
+    overflow-x: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+  }
+  
+}
+@media screen and (max-width:  479px) {
+  .treatmentText{
+    text-align: left;
+  }
+  .treatmentText span{
+    color: #0e7496 !important;
+  }
+  .treatmentDescription h1{
+    color: #0e7496 !important;
+  }
+}
