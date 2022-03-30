@@ -248,3 +248,6 @@
   align-items: center !important;
   width: 250px !important;
 }
+.react-tel-input .flag-dropdown{
+  border: none !important;
+}

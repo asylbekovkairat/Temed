@@ -545,6 +545,7 @@
   background-position: bottom;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .card_specialists_block1{
   width: 280px;
@@ -553,6 +554,11 @@
   margin-top: 140px;
   display: flex;
   
+}
+@media(max-width: 512px){
+  .cardList_specialists_wrapper{
+      flex-wrap: wrap;
+  }
 }
 #title{
 
