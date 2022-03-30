@@ -9,7 +9,8 @@ import "../styles/treatmentCourse.css"
 import '../styles/modal.css'
 import '../styles/footer.css'
 import '../styles/review.css'
-
+import '../styles/callMeFormMenu.css'
+import "react-phone-input-2/lib/style.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

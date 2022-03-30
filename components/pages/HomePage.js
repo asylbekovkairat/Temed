@@ -1,4 +1,3 @@
-
 import mainSliderCardList from "../constants/main-slider-card-list";
 import MrtSlider from "../common/MrtSlider/MrtSlider";
 import mrtDesList from "../constants/mrt-slider-card-des";
@@ -14,6 +13,7 @@ import ReviewList from "../constants/Reviews-info";
 import YouTubeSlider from "../common/youtube-slider/YouTubeSlider";
 import TreatmentCourse from "../common/TreatmentCourse/mainCard/TreatmentCourse";
 import reviewCard from "../constants/review-card";
+import PhoneInput from "react-phone-input-2";
 
 
 export default function HomePage() {
@@ -21,6 +21,7 @@ export default function HomePage() {
     const [youtubeActive, setYouTubeActive] = useState(false)
     const [youtubeUrl, setYouTubeUrl] = useState("")
     const [id, setId] = useState(0)
+    const [phone, setPhone] = useState("");
 
     return (
         <div>
@@ -52,61 +53,66 @@ export default function HomePage() {
 
                         </div>
 
-
-                    </div>
-                </div>
-                <div className='cards-wrapper adap-cards'>
-                    {
-                        mainSliderCardList.map((e, index) =>
-                            <div style={{ backgroundColor: e.color }} key={index} className="cardWrapper adap-card">
-                                <div className="adap-title-wrapper">
-                                    <img src={e.img} />
-                                    <span className="adap-card-first-text">{e.firstText}</span>
-                                </div>
-                                <div className="adap-text-wrapper">
-
-                                    <div className="adap-card-text">{e.text}
-                                        <span className="adap-card-last-text">
-                                            {e.lastText}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    }
-                </div>
+            <div className="secondSliderWrapper">
+              <div className="secondSliderText">
+                Пациенты сами рассказывают о своём лечении
+              </div>
+              <Link href="/">
+                <button className="slick-btn">Посмотреть вебинар</button>
+              </Link>
             </div>
-            <section>
-                <div className="container">
-                    <div className="mrt">
-                        <img src="https://static.tildacdn.com/tild3962-3363-4530-b466-386339303338/chiropractor-concept.jpg" />
-                        <div className="mrt-text-wrapper">
-                            <div className="mrt-text">
-                                <h3>
-                                    Получите онлайн-консультацию по снимкам МРТ
-                                </h3>
-                                <div>
-                                    Вы узнаете можно ли вылечить грыжу без операции в нашей клинике
-                                </div>
-                            </div>
-                            <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
-                        </div>
-
-                    </div>
-
-                    <div className="mrt-title-slider-wrapper">
-                        <div className="mrt-title">
-                            <h1>
-                                Наши результаты, которыми мы гордимся
-                            </h1>
-                            <div>
-                                Уже более 3 000 довольных пациентов избавились
-                                от боли в спине и уменьшили грыжу без операции!
-                            </div>
-                        </div>
-                        <div className="mrt-slider">
-                            <MrtSlider setActiveSlide={setActiveSlide} />
-                        </div>
+            <div className="third-slider-wrapper">
+              <img src="https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png" />
+            </div>
+          </div>
+        </div>
+        <div className="cards-wrapper adap-cards">
+          {mainSliderCardList.map((e) => (
+            <div
+              style={{ backgroundColor: e.color }}
+              key={e.text}
+              className="cardWrapper adap-card"
+            >
+              <div className="adap-title-wrapper">
+                <img src={e.img} />
+                <span className="adap-card-first-text">{e.firstText}</span>
+              </div>
+              <div className="adap-text-wrapper">
+                <div className="adap-card-text">
+                  {e.text}
+                  <span className="adap-card-last-text">{e.lastText}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <section className="mrt-section">
+        <div className="container">
+          <div className="mrt">
+            <img src="https://static.tildacdn.com/tild3962-3363-4530-b466-386339303338/chiropractor-concept.jpg" />
+            <div className="mrt-text-wrapper">
+              <div className="mrt-text">
+                <h3>Получите онлайн-консультацию по снимкам МРТ</h3>
+                <div>
+                  Вы узнаете можно ли вылечить грыжу без операции в нашей
+                  клинике
+                </div>
+              </div>
+              <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
+            </div>
+          </div>
+          <div className="mrt-title-slider-wrapper">
+            <div className="mrt-title">
+              <h1>Наши результаты, которыми мы гордимся</h1>
+              <div>
+                Уже более 3 000 довольных пациентов избавились от боли в спине и
+                уменьшили грыжу без операции!
+              </div>
+            </div>
+            <div className="mrt-slider">
+              <MrtSlider setActiveSlide={setActiveSlide} />
+            </div>
 
                     </div>
                     <div className="mrt-slider-des-wrapper">
@@ -278,8 +284,9 @@ export default function HomePage() {
                     <div className="treatmentBlock">
                         <TreatmentCourse id={id} setId={setId} />
                     </div>
-                </div>
-            </div>
+
+
+
             <div className="therapy-title">Что мы лечим</div>
             <div className="container cardList_terapy_wrapper">
                 {
@@ -395,6 +402,61 @@ export default function HomePage() {
                         </Link>
                     </div>
                 </div>
+<div className="container-block-callMe">
+        <div className="container">
+          <div className="callMe-form-block">
+            <div className="callMe-form-header-text">
+              Хотите, мы Вам перезвоним?
+            </div>
+            <div className="callMe-form-text-description">
+              Как уменьшить грыжу без операции и избавиться от боли в спине?
+              Расскажем о лечении и запишем на консультацию к специалисту
+            </div>
+            <div className="callMe-form-phone-number">
+              <div className="callMe-form-phone-number-input">
+                <div>
+                  Имя <br />
+                  <input
+                    className="callMe-form-name-input"
+                    placeholder="Иванов Иван"
+                  ></input>
+                </div>
+                <div>
+                  Телефон * <br />
+                  <PhoneInput
+                    className="callMe-form-name-input"
+                    placeholder="Номер телефона"
+                    country={"kg"}
+                    value={phone}
+                    onChange={(phone) => setPhone({ phone })}
+                  />
+                </div>
+                <div>
+                  <Link href="/">
+                    <button className="callMe-form-btn">Заказать звонок</button>
+                  </Link>
+                </div>
+              </div>
+              <div className="callMe-form-footer">
+                Нажимая на кнопку Заказать звонок, я подтверждаю, что ознакомлен
+                и согласен с условиями
+                <br />
+                <Link href="/">
+                  политики конфиденциальности и правилами обработки персональных
+                  данных
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="callMe-form-img">
+            <img
+              src={
+                "https://thumb.tildacdn.com/tild6561-3366-4464-b336-656330336231/-/resize/407x/-/format/webp/noroot_1.png"
+              }
+            ></img>
+          </div>
+        </div>
+      </div>
 
             </div>
             )
