@@ -1018,6 +1018,324 @@
     margin: 0;
   }
 }
+.RegToWeb-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+
+.RegToWeb-Content {
+  width: 61%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #0e7496;
+  border-radius: 10px;
+  height: 82px;
+}
+
+.RegToWeb-Content img {
+  width: 240px;
+  margin-left: -50px;
+}
+
+.RegToWeb-Content .regToWeb-Desc {
+  width: 55%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  color: #0e7496;
+}
+
+.regToWeb-Desc p.About-Therapy {
+  font-size: 26px;
+}
+
+.regToWeb-Desc p.Pacient-School {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.RegToWeb-Content .RegToWebinar-btn {
+  width: 20%;
+  margin-right: 12px;
+  height: 53%;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: #0e7496;
+  transition: .3s;
+}
+
+.RegToWeb-Content .RegToWebinar-btn:hover {
+  background: #ee2106c0;
+  transition: .3s;
+}
+
+@media (min-width:374px) and (max-width: 413px) {
+  .RegToWeb-Wrapper {
+    height: 450px;
+  }
+
+  .RegToWeb-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    height: 70%;
+  }
+
+  .RegToWeb-Content img {
+    width: 280px;
+    margin-left: 0;
+    margin-top: -38px;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc {
+    width: 74%;
+    height: 30%;
+
+    text-align: center;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc p.About-Therapy {
+    font-size: 19px;
+  }
+
+  .RegToWeb-Content .RegToWebinar-btn {
+    width: 50%;
+    height: 14%
+  }
+}
+
+@media (min-width:414px) and (max-width: 598px) {
+  .RegToWeb-Wrapper {
+    height: 450px;
+  }
+
+  .RegToWeb-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    height: 70%;
+  }
+
+  .RegToWeb-Content img {
+    width: 280px;
+    margin-left: 0;
+    margin-top: -38px;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc {
+    width: 74%;
+    height: 30%;
+
+    text-align: center;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc p.About-Therapy {
+    font-size: 19px;
+  }
+
+  .RegToWeb-Content .RegToWebinar-btn {
+    width: 50%;
+    height: 14%
+  }
+}
+
+@media (min-width:319px) and (max-width:373px) {
+  .RegToWeb-Wrapper {
+    height: 450px;
+  }
+
+  .RegToWeb-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    height: 70%;
+  }
+
+  .RegToWeb-Content img {
+    width: 280px;
+    margin-left: 0;
+    margin-top: -38px;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc {
+    width: 74%;
+    height: 30%;
+
+    text-align: center;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc p.About-Therapy {
+    font-size: 19px;
+  }
+
+  .RegToWeb-Content .RegToWebinar-btn {
+    width: 55%;
+    height: 14%
+  }
+}
+
+@media (min-width:599px) and (max-width:767px) {
+  .RegToWeb-Wrapper {
+    height: 450px;
+  }
+
+  .RegToWeb-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 54%;
+    height: 70%;
+  }
+
+  .RegToWeb-Content img {
+    width: 280px;
+    margin-left: 0;
+    margin-top: -38px;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc {
+    width: 74%;
+    height: 30%;
+
+    text-align: center;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc p.About-Therapy {
+    font-size: 19px;
+  }
+
+  .RegToWeb-Content .RegToWebinar-btn {
+    width: 50%;
+    height: 14%
+  }
+}
+
+@media (min-width:767px) and (max-width:768px) {
+  .RegToWeb-Wrapper {
+    height: 450px;
+  }
+
+  .RegToWeb-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    height: 70%;
+  }
+
+  .RegToWeb-Content img {
+    width: 280px;
+    margin-left: 0;
+    margin-top: -38px;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc {
+    width: 74%;
+    height: 30%;
+
+    text-align: center;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc p.About-Therapy {
+    font-size: 19px;
+  }
+
+  .RegToWeb-Content .RegToWebinar-btn {
+    width: 50%;
+    height: 14%
+  }
+}
+
+@media (min-width:768px) and (max-width:989px) {
+  .RegToWeb-Wrapper {
+    height: 450px;
+  }
+
+  .RegToWeb-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 51%;
+    height: 70%;
+  }
+
+  .RegToWeb-Content img {
+    width: 280px;
+    margin-left: 0;
+    margin-top: -38px;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc {
+    width: 74%;
+    height: 30%;
+
+    text-align: center;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc p.About-Therapy {
+    font-size: 19px;
+  }
+
+  .RegToWeb-Content .RegToWebinar-btn {
+    width: 50%;
+    height: 14%
+  }
+}
+
+@media (min-width:990px) and (max-width: 1025px) {
+  .RegToWeb-Wrapper {
+    height: 450px;
+  }
+
+  .RegToWeb-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    height: 70%;
+  }
+
+  .RegToWeb-Content img {
+    width: 280px;
+    margin-left: 0;
+    margin-top: -38px;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc {
+    width: 74%;
+    height: 30%;
+
+    text-align: center;
+  }
+
+  .RegToWeb-Content .regToWeb-Desc p.About-Therapy {
+    font-size: 19px;
+  }
+
+  .RegToWeb-Content .RegToWebinar-btn {
+    width: 50%;
+    height: 14%
+  }
+}
   /* start of youtube-block */
   .youtube-left-block {
     width: 30%;
@@ -1811,4 +2129,3 @@
   line-height: 24px;
 }
 /* city wrapper end */
-
