@@ -22,7 +22,7 @@ const cardList_terapy =[
         button: "Подробнее"
     },
     {
-        img: "https://thumb.tildacdn.com/tild3362-3564-4266-b337-613563636134/-/cover/720x500/center/center/-/format/webp/IMG_8784.jpg",
+        img: "https://thumb.tildacdn.com/tild6232-6634-4563-a162-303464326531/-/cover/720x500/center/center/-/format/webp/noroot11.png",
         title: "Лечение боли в суставах",
         des1: "Наши травматологи-ортопеды лечат консервативно, используя доказательные лекарственные и физиотерапевтические подходы для облегчения проявлений суставной боли и профилактики ее обострений. ",
         des2: "",
