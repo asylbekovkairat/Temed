@@ -299,6 +299,10 @@
   margin: 30px 0;
   padding: 25px 0;
 }
+.mrt_wrapper{
+  display: flex;
+  justify-content: space-around;
+}
 .mrt img {
   width: 117px;
   margin-left: 50px;
@@ -359,6 +363,7 @@
 .mrt-title-slider-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
 }
 .mrt-slider img {
   width: 120px;
@@ -2097,7 +2102,7 @@
   justify-content: space-around;
   align-items: center;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 .city_address div{
