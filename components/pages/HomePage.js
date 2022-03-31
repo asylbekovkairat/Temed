@@ -18,8 +18,7 @@ import Mrt from "../common/mrt/mrt";
 import {db} from "../../config/firebase.js"
 import RegToWeb from "../common/RegToWeb/regToWeb";
 import cityAddressList from "../constants/city-address-list"
-
-
+import Card from "../card/ConsultaitionCard";
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -284,7 +283,6 @@ export default function HomePage() {
                     <div className="treatmentBlock">
                         <TreatmentCourse id={id} setId={setId} />
                     </div>
-
                 </div>
             </div>
             <div className="therapy-title">Что мы лечим</div>
@@ -305,6 +303,11 @@ export default function HomePage() {
                     />)
                 }
             </div>
+            {
+                <div>
+                    <Card/>
+                </div>
+            }
             <div className="clinic">
                 <h3>
                     5 федеральных 

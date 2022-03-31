@@ -14,6 +14,7 @@ import "react-phone-input-2/lib/style.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
+
 }
 
 export default MyApp
