@@ -34,6 +34,7 @@
     max-width: 90%;
   }
 }
+
 .authors {
   margin-top: 40px;
   display: flex;
@@ -1650,6 +1651,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
   }
   .btn {
     border: 1px solid #0e7496;
@@ -2147,3 +2149,40 @@
     flex-direction: column;
 }
 /* city wrapper end */
+
+
+/* Joints Page start */
+.joints_title{
+  width: auto;
+  height: 130px;
+  background-color: #f5f7fa;
+  margin-top: 20px;
+}
+.joints_title h1{
+  font-size: 42px;
+  line-height: 1.23;
+  font-weight: 300;
+  padding-top: 34px;
+}
+.joint_treatment{
+  text-align: center;
+  margin-top: 25px;
+}
+.joint_treatment h2{
+  color: #4c4c4c;
+  font-size: 40px;
+  font-weight: 400;
+}
+.about_diagnostics{
+  padding-top: 17px;
+  padding-bottom: 40px;
+  font-weight: 300;    
+  font-size: 20px;
+  line-height: 1.55;
+  color: #4c4c4c;
+}
+.btn_traumatologist{
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Joints Page end */
