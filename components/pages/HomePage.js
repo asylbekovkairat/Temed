@@ -1,6 +1,7 @@
 import MainSlider from "../common/Sliders/MainSlider";
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import Card from "../card/ConsultaitionCard";
 
 
 export default function HomePage() {
@@ -99,6 +100,12 @@ export default function HomePage() {
                 </div>)
 
             }
+            {
+                <div>
+                    <Card/>
+                </div>
+            }
+
 
         </div>
     )
