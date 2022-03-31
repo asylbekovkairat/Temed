@@ -1064,8 +1064,8 @@
 .RegToWeb-Content .RegToWebinar-btn {
   width: 20%;
   margin-right: 12px;
-  height: 53%;
-  border-radius: 20px;
+  padding: 15px 10px;
+  border-radius: 30px;
   border: none;
   color: white;
   background: #0e7496;

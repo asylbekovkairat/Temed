@@ -54,6 +54,7 @@
 .callMe-form-phone-number-input input {
   padding-left: 20px;
   align-items: center;
+  outline: none;
 }
 
 .callMe-form-name-input {

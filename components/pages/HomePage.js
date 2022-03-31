@@ -24,7 +24,6 @@ export default function HomePage() {
     const [youtubeActive, setYouTubeActive] = useState(false)
     const [youtubeUrl, setYouTubeUrl] = useState("")
     const [id, setId] = useState(0)
-    const [phone, setPhone] = useState("");
 
     return (
         <div>

@@ -1,7 +1,9 @@
 import PhoneInput from "react-phone-input-2";
 import Link from "next/link";
+import { useState } from "react";
 
 const Callme = () => {
+  const [phone, setPhone] = useState("");
   return (
     <>
       <div className="container-block-callMe">
