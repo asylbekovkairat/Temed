@@ -17,6 +17,8 @@ import {useState, useEffect} from "react"
 import Mrt from "../common/mrt/mrt";
 import {db} from "../../config/firebase.js"
 import RegToWeb from "../common/RegToWeb/regToWeb";
+import cityAddressList from "../constants/city-address-list"
+
 
 
 export default function HomePage() {
@@ -24,13 +26,16 @@ export default function HomePage() {
     const [youtubeActive, setYouTubeActive] = useState(false)
     const [youtubeUrl, setYouTubeUrl] = useState("")
     const [id, setId] = useState(0)
+    
+    const closeModalYouTube = ()=>{
+        setYouTubeActive(false);
+        setYouTubeUrl("");
+        document.body.style.overflowY = "visible"
+    }
 
     return (
         <div>
-            {/* MainSlider */}
             <MainSlider />
-
-            {/* adap-slider */}
             <div className="adap-wrapper">
                 <div className="adap">
                     <div className=" thirdSlider">
@@ -228,29 +233,31 @@ export default function HomePage() {
                                 <br />
                                 Активный популяризатор медицинской науки. Успешный блогер: за 5 лет более 30 млн. просмотров на ютуб-канале
                             </div>
-                            <Link href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ">
+                            <a href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ" target="_blank" rel="noopener noreferrer">
                                 <div className="youtube_links">
                                     <img src="https://thumb.tildacdn.com/tild3730-3834-4330-b336-663430313134/-/resize/66x/-/format/webp/kisspng-computer-ico.png" alt="yt" />
                                     558k
                                     <br />
                                     подписчиков
                                 </div>
-                            </Link>
+                            </a>
                         </div>
 
                         <img className="lowerDoctor" src="https://thumb.tildacdn.com/tild6361-3039-4665-a566-303862663031/-/cover/455x450/center/center/-/format/webp/Untitled-8_1.jpg" alt="" />
                     </div>
                 </div>
             </div>
-            <div className={"youtube-modal-wrapper " + (youtubeActive ? "youtube-modal-active" : "")}>
+            <div onClick={closeModalYouTube} className={"youtube-modal-wrapper " + (youtubeActive ? "youtube-modal-active" : "")}>
                 <iframe width="740" height="400" src={youtubeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <div><svg onClick={() => { setYouTubeActive(false) }} style={{ cursor: "pointer" }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg></div>
+
             </div>
             <div className="container youtube">
 
                 <div className="youtube-left-block">
                     <img className="youtube-clipboard" src="./clipboard.gif" />
                     <div className="youtube-title">
-                        <a><span>YouTube </span></a>
+                        <a href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ" target="_blank" rel="noopener noreferrer"><span>YouTube </span></a>
                         канал доктора Епифанова
                     </div>
                     <div className="youtube-subscribers">Более 558 тыс. подписчиков</div>
@@ -305,56 +312,20 @@ export default function HomePage() {
                 </h3>
             </div>
             <div className="container city_wrapper">
-                <Link href="/msk-technopark/">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6363-6466-4364-a334-383764323336/_1-05-01.svg" alt="moscow"/>
-                        <div>
-                            г. Москва
-                            <br/>
-                            м. Технопарк
+                {
+                    cityAddressList.map((e) => 
+                    <Link key={e.link} href={e.link}>
+                        <div className="city_address">
+                            <img src={e.img} />
+                            <div className="address">
+                                {e.city}
+                                <br />
+                                {e.address}
+                            </div>
                         </div>
-                    </div>
-                </Link>
-                <Link href="/msk-fonvizinskaya/">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6662-6263-4366-b030-636664636265/__2-10-01.svg" alt="moscow"/>
-                        <div>
-                            г. Москва
-                            <br/>
-                            м. Фонвизинская
-                        </div>
-                    </div>
-                </Link>
-                <Link href="spb">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6136-6636-4136-a231-373666376631/__-02-01.svg" alt="spb"/>
-                        <div>
-                            г. Санкт-Петербург
-                            <br/>
-                            м. Пионерская
-                        </div>
-                    </div>
-                </Link>
-                <Link href="/krasnodar">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild3065-6533-4030-a230-616563323438/-06-06-01.svg" alt="krasnodar"/>
-                        <div>
-                            г. Краснодар
-                            <br/>
-                            ул. Северная 
-                        </div>
-                    </div>
-                </Link>
-                <Link href="kazan">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6363-3530-4265-b434-383134653932/-04-01.svg" alt="kazan"/>
-                        <div>
-                            г. Казань
-                            <br/>
-                            ул. Право-Булачная
-                        </div>
-                    </div>
-                </Link>
+                    </Link>)
+                }
+                
             </div>
 
             <div className='container card_specialists'>
