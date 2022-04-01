@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   background-color: #f5f7fa;
-  margin-bottom: 50px;
+  height: 65vh;
 }
 .callMe-form-block {
   position: relative;
@@ -162,6 +162,9 @@
     padding: 0 15px;
     display: block;
   }
+  .container-block-callMe{
+    height: 100vh;
+  }
 }
 
 @media (max-width: 540px) {
@@ -186,6 +189,9 @@
     height: 50px;
     padding: 0 15px;
     display: block;
+  }
+  .container-block-callMe{
+    height: 130vh;
   }
 }
 @media (max-width: 375px) {

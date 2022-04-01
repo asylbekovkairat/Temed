@@ -2147,3 +2147,11 @@
     flex-direction: column;
 }
 /* city wrapper end */
+.consultation-card > .react-tel-input .form-control{
+    border-radius: 30px !important;
+}
+.consultation-card{
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 0 15px;
+}
