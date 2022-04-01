@@ -16,7 +16,7 @@ const Card = () => {
           <p>Прием длится 60 минут, включает в себя диагностику, анализ вашего МРТ и составление плана лечения, проходит как в очном формате, так и онлайн.</p>
           <div className={css.t_input}>
             {/* <input type="tel" /> */}
-            <div className={css.input}>
+            <div className={css.input + " consultation-card"}>
               <PhoneInput country={'ru'} value="phone" onChange={phone => setPhone({ phone })} />
             </div>
             <button>Перезвоните мне</button>

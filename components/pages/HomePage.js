@@ -61,18 +61,6 @@ export default function HomePage() {
                             <img src='https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png' />
 
                         </div>
-
-                        <div className="secondSliderWrapper">
-                            <div className="secondSliderText">
-                                Пациенты сами рассказывают о своём лечении
-                            </div>
-                            <Link href="/">
-                                <button className="slick-btn">Посмотреть вебинар</button>
-                            </Link>
-                        </div>
-                        <div className="third-slider-wrapper">
-                            <img src="https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png" />
-                        </div>
                     </div>
                 </div>
                 <div className="cards-wrapper adap-cards">
