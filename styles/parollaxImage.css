@@ -1,0 +1,62 @@
+.image-parollax-wrapper{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 80px;
+    height: 100vh;
+}
+.image-parollax{
+    display: flex;
+    align-items: center;
+}
+
+.image-parollax-left img{
+    width: 260px;
+    position: absolute;
+    height: 460px;
+    left: -300px;
+}
+.image-parollax-left{
+    display: flex;
+    align-items: center;
+}
+.image-parollax-right{
+    display: flex;
+    align-items: center;
+}
+.image-parollax-right img{
+    width: 260px;
+    height: 460px;
+    position: absolute;
+    right: -300px;
+}
+.image-parollax-wrapper > .container{
+   display: flex;
+}
+.image-parollax > div{
+    width: min-content;
+}
+.image-parollax > div > img{
+    margin-bottom: 20px;
+}
+.image-parollax  div >  img{
+    width: 260px;
+    height: 260px;
+    position: relative;
+}
+.image-parollax > div:nth-of-type(1) > img{
+    left: -50px;
+}
+.image-parollax > div:nth-of-type(3) > img{
+   right: -50px;
+}
+.image-parollax-middle{
+    background: url(https://thumb.tildacdn.com/tild3965-6638-4936-b030-326238346566/-/format/webp/SFOT0044.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    width: 560px !important;
+    height: 620px;
+    margin: 0 30px;
+    top: 50px;
+}

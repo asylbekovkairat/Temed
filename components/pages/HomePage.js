@@ -18,6 +18,7 @@ import Mrt from "../common/mrt/mrt";
 import {db} from "../../config/firebase.js"
 import RegToWeb from "../common/RegToWeb/regToWeb";
 import cityAddressList from "../constants/city-address-list"
+import ImageParolax from "../common/ImageParollax/ImageParolax";
 
 
 
@@ -61,18 +62,6 @@ export default function HomePage() {
                         <div className="third-slider-wrapper">
                             <img src='https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png' />
 
-                        </div>
-
-                        <div className="secondSliderWrapper">
-                            <div className="secondSliderText">
-                                Пациенты сами рассказывают о своём лечении
-                            </div>
-                            <Link href="/">
-                                <button className="slick-btn">Посмотреть вебинар</button>
-                            </Link>
-                        </div>
-                        <div className="third-slider-wrapper">
-                            <img src="https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png" />
                         </div>
                     </div>
                 </div>
@@ -327,6 +316,7 @@ export default function HomePage() {
                 }
                 
             </div>
+            <ImageParolax/>
 
             <div className='container card_specialists'>
 
