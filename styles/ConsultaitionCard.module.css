@@ -62,10 +62,7 @@
     .title>h3{
         color: #4c4c4c;
         font-family: 'Roboto', sans-serif;
-    }
-    
-    .null_first {}
-    
+    }    
     .image{
         z-index: 4;
         border-radius: 25px;
@@ -139,8 +136,6 @@
     .null {
         width: 20%;
     }
-    
-    .null_first {}
     
     .image{
         z-index: 2;
