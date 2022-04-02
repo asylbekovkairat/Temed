@@ -11,7 +11,7 @@ const Mrt = () => {
                 Вы узнаете можно ли вылечить грыжу без операции в нашей клинике
               </div>
             </div>
-            <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
+            <button className="btn slick-btn btn-red">Показать МРТ врачу</button>
           </div>
         </div>
       </div>
