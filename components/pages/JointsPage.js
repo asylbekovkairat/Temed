@@ -65,7 +65,7 @@ export default function JointsPage() {
         </div>
         <div className="container painCards_wrapper">
           {
-            painCardList.map((e) => <PainCard {...e}/>)
+            painCardList.map((e) => <PainCard key={e.title} {...e}/>)
           }
         </div>
         <div className="joint_treatment">
@@ -74,7 +74,7 @@ export default function JointsPage() {
         <div className="container treatment_methods">
           <div className="treatments_wrapper">
             {
-              treatmentsList.map((item) => <TreatmentMethodCard {...item}/>)
+              treatmentsList.map((item, index) => <TreatmentMethodCard key={index} {...item}/>)
             }
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function JointsPage() {
         <div className="container videosCards">
           <div className="videosWrapper">
             {
-              videosList.map((e) => <VideoCard {...e}/>)
+              videosList.map((e, index) => <VideoCard key={index} {...e}/>)
             }
           </div>
         </div>
