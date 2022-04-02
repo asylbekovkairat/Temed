@@ -64,7 +64,7 @@ export default function Header() {
                             <div className='header-services header-more'>
                                 <div>Запись на прием к неврологу</div>
                                 <div>Запись на прием к ортопеду-травматологу</div>
-                                <div>Запись на массаж</div>
+                                <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
                                 <div>Статьи</div>
                                 <div>О методике</div>
@@ -148,7 +148,7 @@ export default function Header() {
                             <div className='header-clinics'>
                                 <div>Запись на прием к неврологу</div>
                                 <div>Запись на прием к ортопеду-травматологу</div>
-                                <div>Запись на массаж</div>
+                                <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
                                 <div>Статьи</div>
                                 <div>О методике</div>

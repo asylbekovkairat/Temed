@@ -126,16 +126,7 @@
         border: 1px solid #cccccc;
         border-radius: 25px;
     }
-    
-    .t_input>button {
-        width: 200px;
-        height: 35px;
-        border: none;
-        background-color: #ff685a;
-        border-radius: 25px;
-        color: white;
-    }
-    
+
     .internal {
         border: #cccccc 1px solid;
         border-radius: 25px;
