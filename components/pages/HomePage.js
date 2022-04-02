@@ -18,7 +18,7 @@ import Mrt from "../common/mrt/mrt";
 import {db} from "../../config/firebase.js"
 import RegToWeb from "../common/RegToWeb/regToWeb";
 import cityAddressList from "../constants/city-address-list"
-import Card from "../card/ConsultaitionCard";
+import Card from "../common/card/ConsultaitionCard";
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)

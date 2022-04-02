@@ -62,10 +62,7 @@
     .title>h3{
         color: #4c4c4c;
         font-family: 'Roboto', sans-serif;
-    }
-    
-    .null_first {}
-    
+    }    
     .image{
         z-index: 4;
         border-radius: 25px;
@@ -126,16 +123,7 @@
         border: 1px solid #cccccc;
         border-radius: 25px;
     }
-    
-    .t_input>button {
-        width: 200px;
-        height: 35px;
-        border: none;
-        background-color: #ff685a;
-        border-radius: 25px;
-        color: white;
-    }
-    
+
     .internal {
         border: #cccccc 1px solid;
         border-radius: 25px;
@@ -148,8 +136,6 @@
     .null {
         width: 20%;
     }
-    
-    .null_first {}
     
     .image{
         z-index: 2;

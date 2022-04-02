@@ -1,5 +1,5 @@
 import PhoneInput from "react-phone-input-2";
-import css from "../../styles/ConsultaitionCard.module.css"
+import css from "../../../styles/ConsultaitionCard.module.css"
 import { useState } from "react";
 
 const Card = () => {
@@ -19,7 +19,7 @@ const Card = () => {
             <div className={css.input + " consultation-card"}>
               <PhoneInput country={'ru'} value="phone" onChange={phone => setPhone({ phone })} />
             </div>
-            <button>Перезвоните мне</button>
+            <button className="btn btn-red">Перезвоните мне</button>
           </div>
         </div>
       </div>

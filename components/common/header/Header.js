@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { useState,useEffect } from "react"
+import { useState, useEffect } from "react"
 
 
 export default function Header() {
@@ -7,10 +7,10 @@ export default function Header() {
     const [activeSearch, setActiveSearch] = useState(false)
     const [search, setSearch] = useState("")
     useEffect(() => {
-        if(activeBurger){
+        if (activeBurger) {
             document.body.style.overflowY = "hidden"
         }
-        else{
+        else {
             document.body.style.overflowY = "visible"
         }
     }, [activeBurger]);
@@ -57,7 +57,9 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                    <div><p>Результаты</p></div>
+                    <Link href="/result">
+                        <div><p>Результаты</p></div>
+                    </Link>
                     <div><p>Специалисты</p></div>
                     <div><p>Цены</p></div>
                     <div><p>Цены</p></div>
@@ -67,7 +69,7 @@ export default function Header() {
                             <div className='header-services header-more'>
                                 <div>Запись на прием к неврологу</div>
                                 <div>Запись на прием к ортопеду-травматологу</div>
-                                <div>Запись на массаж</div>
+                                <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
                                 <div>Статьи</div>
                                 <div>О методике</div>
@@ -113,9 +115,9 @@ export default function Header() {
                     <svg style={{ cursor: "pointer" }} onClick={() => { setActiveSearch(false) }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg>
                 </div>
             </div>
-            <div onClick={()=>{setActiveBurger(false)}} className={"header-burger-modal-wrapper " +(activeBurger ? "active" : "")}>
-                <div className="header-burger-modal" onClick={(e)=>{e.stopPropagation()}}>
-                    <div>    <svg onClick={()=>{setActiveBurger(false)}} style={{ cursor: "pointer" }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg></div>
+            <div onClick={() => { setActiveBurger(false) }} className={"header-burger-modal-wrapper " + (activeBurger ? "active" : "")}>
+                <div className="header-burger-modal" onClick={(e) => { e.stopPropagation() }}>
+                    <div>    <svg onClick={() => { setActiveBurger(false) }} style={{ cursor: "pointer" }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg></div>
                     <div>ГЛАВНАЯ</div>
                     <div className='header-upper-choose-clinic header-burger-clinic'><p>ВЫБРАТЬ КЛИНИКУ</p>
                         <div className='header-clinics-wrapper'>
@@ -153,7 +155,7 @@ export default function Header() {
                             <div className='header-clinics'>
                                 <div>Запись на прием к неврологу</div>
                                 <div>Запись на прием к ортопеду-травматологу</div>
-                                <div>Запись на массаж</div>
+                                <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
                                 <div>Статьи</div>
                                 <div>О методике</div>
@@ -163,7 +165,7 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                    <div style={{position: "absolute", bottom: "10px"}}>
+                    <div style={{ position: "absolute", bottom: "10px" }}>
                         <a href='tel: +79584055327'>8 (958) 405-53-27</a>
                         <div>Пн-Вс: 8:00-20:00</div>
                         <div className="header-burger-modal-svg">
