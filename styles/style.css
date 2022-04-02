@@ -34,6 +34,7 @@
     max-width: 90%;
   }
 }
+
 .authors {
   margin-top: 40px;
   display: flex;
@@ -2154,8 +2155,142 @@
 .consultation-card {
   border: 1px solid grey;
   border-radius: 30px;
-  padding: 2px 15px;
+    padding: 2px 15px;
 }
+
+/* Joints Page start */
+.joints_title{
+  width: auto;
+  height: 130px;
+  background-color: #f5f7fa;
+  margin-top: 20px;
+}
+.joints_title h1{
+  font-size: 42px;
+  line-height: 1.23;
+  font-weight: 300;
+  padding-top: 34px;
+}
+.joint_treatment{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.joint_treatment h2{
+  color: #4c4c4c;
+  font-size: 40px;
+  font-weight: 400;
+}
+.about_diagnostics{
+  padding-top: 17px;
+  padding-bottom: 40px;
+  font-weight: 300;    
+  font-size: 20px;
+  line-height: 1.55;
+  color: #4c4c4c;
+}
+.btn_traumatologist{
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* treatment Method cards start */
+.treatmentMethCard{
+  max-width: 360px;
+  height: 758px;
+  border: 1px #dbdbdb solid;
+  text-align: center;
+}
+.treatmentMethCard img{
+  width: 80px;
+  height: 80px;
+  margin: 40px 0px 45px 0px;
+}
+.treatment_title{
+  color: rgb(76, 76, 76);
+  font-weight: 800;
+  font-size: 25px;
+  font-family: Rubik;
+  height: 65px;
+}
+.treatments_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  margin: 50px 0 50px 0;
+}
+.treatment_desc{
+  color: rgb(41, 23, 23);
+  font-weight: 400;
+  font-family: Rubik;
+  text-align: left;
+  margin: 0px 25px 0px 25px;
+}
+.treatment_duration{
+  color: rgb(14, 116, 150);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.treatment_methods{
+  margin-top: 60px;
+}
+/* treatment Method card end */
+
+/* painCard start*/
+
+.painCards_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 45px;
+  margin-top: 50px; 
+  margin-bottom: 65px;
+}
+.painCard{
+  height: 325px;
+  width: 350px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 0px 2px 0px;
+}
+.painCard:hover{
+  box-shadow:  5px 5px 5px rgba(154, 147, 140, 0.5), 5px 5px 5px rgba(255, 255, 255, 1);
+}
+.painDesc{
+  padding: 30px 30px 40px;
+}
+.painDesc ul{
+  padding-left: 19px;
+  font-family: 'Rubik',Arial,sans-serif;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+.painDesc ul li{
+  margin-bottom: 5px;
+}
+.painTitle{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+
+/* painCard end */
+
+/* VideoCard start */
+.v_link{
+  width: 340px;
+  height: 340px;
+  margin-bottom: 50px;
+}
+.videosWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 512px){
+  .videosWrapper{
+    justify-content: center;
+  }
+}
+/* VideoCard end */
+/* Joints Page end */
 .doctor_card_wrapper {
   display: flex;
   flex-wrap: wrap;
