@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useState,useEffect } from "react"
 
+
 export default function Header() {
     const [activeBurger, setActiveBurger] = useState(false)
     const [activeSearch, setActiveSearch] = useState(false)
@@ -49,7 +50,9 @@ export default function Header() {
                             <div className="rotated-block lower-rotated"></div>
                             <div className='header-services'>
                                 <div>Лечения позвоночника</div>
-                                <div>Лечения суставов</div>
+                                <Link href="joints  ">
+                                    <div>Лечения суставов</div>
+                                </Link>
                                 <div>Курс физической теропии</div>
                             </div>
                         </div>
@@ -133,7 +136,9 @@ export default function Header() {
                             <div className="rotated-block burger-rotated"></div>
                             <div className='header-clinics'>
                                 <div>Лечения позвоночника</div>
-                                <div>Лечения суставов</div>
+                                <Link href="joints">
+                                    <div>Лечения суставов</div>
+                                </Link>
                                 <div>Курс физической теропии</div>
                             </div>
                         </div>
