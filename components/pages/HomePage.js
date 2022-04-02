@@ -15,8 +15,7 @@ import reviewCard from "../constants/review-card";
 import Callme from "../common/Block_CallMe/callMe";
 import {useState, useEffect} from "react"
 import Mrt from "../common/mrt/mrt";
-import {db} from "../../config/firebase.js"
-import RegToWeb from "../common/RegToWeb/regToWeb";
+import RegToWeb from "./../common/RegToWeb/RegToWeb";
 import cityAddressList from "../constants/city-address-list"
 import Card from "../common/card/ConsultaitionCard";
 
