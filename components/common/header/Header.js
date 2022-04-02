@@ -145,7 +145,9 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                    <div>РЕЗУЛЬТАТЫ</div>
+                    <Link href="result">
+                        <div>РЕЗУЛЬТАТЫ</div>
+                    </Link>
                     <div>СПЕЦИАЛИСТЫ</div>
                     <div>ЦЕНЫ</div>
                     <div>КОНТАКТЫ</div>
