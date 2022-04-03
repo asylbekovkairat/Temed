@@ -63,8 +63,10 @@ export default function Header() {
                         <div><p>Результаты</p></div>
                     </Link>
                     <div><p>Специалисты</p></div>
-                    <div><p>Цены</p></div>
-                    <div><p>Цены</p></div>
+                    <Link href="price">
+                        <div><p>Цены</p></div>
+                    </Link>
+                    <div><p>Контакты</p></div>
                     <div className='header-lower-services'><p>Еще...</p>
                         <div className='header-services-wrapper'>
                             <div className="rotated-block lower-rotated"></div>

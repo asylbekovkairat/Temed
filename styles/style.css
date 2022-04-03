@@ -2334,3 +2334,52 @@
   flex-wrap: wrap;
   justify-content: space-between;
 } 
+
+/* PricePage start */
+.PricesCard_wrapper{
+  margin-top: 40px;
+}
+.priceCard{
+  margin-bottom: 100px;
+}
+.priceCard > .priceReason_wrapper{
+  margin-bottom: 40px;
+}
+.priceHead{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  border-bottom: 1px solid black;
+  font-size: 17px;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+.priceReason{
+  padding: 20px;
+  border-bottom: 1px solid black;
+  color: #4c4c4c;
+  font-size: 15px;
+  line-height: 1.30;
+  font-weight: 300;
+}
+.staticPath{
+  margin-top: 45px;
+  color: #4c4c4c;
+  font-size: 16px;
+}
+.priceListCity{
+  width: 200px;
+  height: 50px;
+  background-color: #0e7496;
+  color: #ffffff !important;
+  font-weight: 400 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.priceListCity div{
+  padding-bottom: 5px;
+}
+/* PricePage end */
