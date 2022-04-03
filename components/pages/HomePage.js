@@ -114,7 +114,7 @@ export default function HomePage() {
                             </div>
                             {
                                 mrtDesList[activeSlide].before.map((e) =>
-                                    <div key={mrtDesList[activeSlide].id} className="mrt-before-des-text">
+                                    <div key={e.id} className="mrt-before-des-text">
                                         <div>
                                             {e}
                                         </div>
