@@ -12,7 +12,7 @@ export default function PriceCard({priceHead, priceReason}) {
             <div className="priceReason">{item}</div>
           ))}
         </div>
-        <button class="btn slick-btn btn-red">Показать МРТ врачу</button>
+        <button className="btn slick-btn btn-red">Показать МРТ врачу</button>
       </div>
     </>
   );
