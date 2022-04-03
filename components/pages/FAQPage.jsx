@@ -1,6 +1,8 @@
 import css from '../../styles/faqpage.module.css'
 import Link from 'next/link'
 import Mrt from '../common/mrt/mrt';
+import faqList from '../constants/faq-list';
+import Faqcard from '../common/card_faq/FaqCard';
 
 const Faqpage = () => {
     return (
@@ -14,8 +16,16 @@ const Faqpage = () => {
             <div className='container'>
                 <Mrt />
             </div>
-            <div>
-                
+            <div}>
+                {
+                    faqList.map((e)=><Faqcard
+                    link={e.link}
+                    title={e.title}
+                    des={e.des}
+                    des2={e.des2}
+                    text={e.text}
+                    />)
+                }
             </div>
         </div>
     );
