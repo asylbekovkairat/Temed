@@ -1624,7 +1624,7 @@
   color: #0e7496;
 }
 .header-more {
-  left: -350% !important;
+  left: -400% !important;
 }
 .header-lower-services {
   position: relative;
@@ -2305,6 +2305,10 @@
 .callback_wrapper > .consultation-card{
   padding: 8px 15px !important;
   border-color: rgba(131, 130, 130, 0.5);
+  background: white;
+}
+.react-tel-input .selected-flag{
+  background: white;
 }
 @media(max-width: 960px){
   .doctor_card_wrapper{

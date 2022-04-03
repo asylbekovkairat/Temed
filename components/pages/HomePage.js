@@ -66,7 +66,7 @@ export default function HomePage() {
                     {mainSliderCardList.map((e) => (
                         <div
                             style={{ backgroundColor: e.color }}
-                            key={e.text}
+                            key={e.id}
                             className="cardWrapper adap-card"
                         >
                             <div className="adap-title-wrapper">
@@ -113,8 +113,8 @@ export default function HomePage() {
                                 До
                             </div>
                             {
-                                mrtDesList[activeSlide].before.map((e, index) =>
-                                    <div key={index} className="mrt-before-des-text">
+                                mrtDesList[activeSlide].before.map((e) =>
+                                    <div key={mrtDesList[activeSlide].id} className="mrt-before-des-text">
                                         <div>
                                             {e}
                                         </div>
@@ -129,8 +129,8 @@ export default function HomePage() {
                             </div>
 
                             {
-                                mrtDesList[activeSlide].after.map((e, index) =>
-                                    <div key={index} className="mrt-after-des-text">
+                                mrtDesList[activeSlide].after.map((e) =>
+                                    <div key={e.id} className="mrt-after-des-text">
                                         <div><img src="https://static.tildacdn.com/tild3037-3031-4330-a464-353032323439/check.svg" /></div>
                                         <div>
                                             {e}
@@ -277,7 +277,7 @@ export default function HomePage() {
                 {
                     cardList_terapy.map((e)=> 
                         <Card_terapy 
-                            key={e.button}
+                            key={e.id}
                             img={e.img}
                             title={e.title} 
                             des1={e.des1} 
@@ -304,7 +304,7 @@ export default function HomePage() {
             <div className="container city_wrapper">
                 {
                     cityAddressList.map((e) => 
-                    <Link key={e.link} href={e.link}>
+                    <Link key={e.id} href={e.link}>
                         <div className="city_address">
                             <img src={e.img} />
                             <div className="address">
@@ -329,7 +329,7 @@ export default function HomePage() {
                     {
                         cardList_specialists.map((e) =>
                             <Card_specialists
-                                key={e.button}
+                                key={e.id}
                                 {...e}
                             />
                         )
@@ -344,7 +344,7 @@ export default function HomePage() {
                     {
                         ReviewList.map((e) =>
                             <Review
-                                key={e.title}
+                                key={e.id}
                                 img={e.img}
                                 title={e.title}
                                 starEmpty={e.starEmpty}
@@ -381,7 +381,7 @@ export default function HomePage() {
                     <div className="review-main-content-container">
                         {
                             reviewCard.map((e) =>
-                                <div key={e.name} className="review-main-content-first-info">
+                                <div key={e.id} className="review-main-content-first-info">
                                     <div className="review-main-content-avatar">
                                         <img src={e.img}></img>
                                     </div>

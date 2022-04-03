@@ -48,7 +48,7 @@ export default function MrtSlider({setActiveSlide}) {
             <Slider {...settings}>
                 {
                     mrtList.map((e) =>
-                        <div key={e.title} className="mrt-card-wrapper">
+                        <div key={e.id} className="mrt-card-wrapper">
                             <img src={e.img} />
                             <div>{e.title}</div>
                         </div>
