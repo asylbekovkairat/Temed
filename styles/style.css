@@ -2334,3 +2334,28 @@
   flex-wrap: wrap;
   justify-content: space-between;
 } 
+
+/* PricePage start */
+.PricesCard_wrapper{
+  margin-top: 40px;
+}
+.priceCard{
+  height: 200px;
+}
+.priceCard > .line{
+  border-bottom: 1px solid black;
+}
+.priceHead{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 25px 15px 25px;
+}
+.priceReason_wrapper{
+  margin: 15px 25px 15px 25px;
+}
+.priceReason{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+/* PricePage end */
