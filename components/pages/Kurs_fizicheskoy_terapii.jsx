@@ -51,7 +51,7 @@ export default function kurs_fizicheskoy_terapii() {
                             <br />
                             •  Слабость или онемение в конечностях
                             <br />
-                            •  Периодические "прострелы"
+                            •  Периодические &apos;прострелы&apos;
                             <br />
                             •  Утренняя общая скованность
                             <br />
@@ -147,7 +147,7 @@ export default function kurs_fizicheskoy_terapii() {
                 <p id={css.des4_1}>9500 руб. за 30 дней</p>
                 <p id={css.des4_2}>24 тренировки, персональное наблюдение мультидисциплинарной командой.</p>
                 <button>Записаться на курс</button>
-                <p id={css.des4_3}>ООО "Скади"
+                <p id={css.des4_3}>ООО &apos;Скади&apos;
                     <br />
                     ИНН/КПП 7702386541/770201001</p>
             </div>
