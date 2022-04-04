@@ -12,7 +12,7 @@ export default function MasseurPage() {
   return (
     <div>
       
-        <div className={css.main + " container"}> <Link href="/"><span>Главная</span></Link> / Массаж</div>
+        <div className={css.main + " container"}> <Link href="/"><span>Главная </span></Link> / Массаж</div>
       <div style={{ background: "#f5f7fa" }}>
         <div className={css.title + " container"}>
           <div className={css.title_left}>

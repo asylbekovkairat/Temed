@@ -1719,7 +1719,7 @@
 }
 
 .header-lower-block {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2335,6 +2335,52 @@
   justify-content: space-between;
 } 
 
+.article-page-wrapper .slick-slider{
+  height: 280px !important;
+}
+.article-page-wrapper .slick-prev{
+  left: -80px !important;
+}
+.article-page-wrapper .slick-next{
+  right: -80px !important;
+}
+.article-page-wrapper .slick-arrow{
+    background: #ff685a !important;
+}
+.article-page-wrapper .slick-arrow:hover{
+  background: white !important;
+  
+}
+.article-page-wrapper .slick-arrow:hover svg{
+  transition: all 0.5s ease-in-out;
+  filter: invert(60%) sepia(34%) saturate(4475%) hue-rotate(324deg) brightness(100%) contrast(101%);
+}
+.article-last-slider .slick-slider{
+  height: 100% !important;
+}
+.article-page-wrapper .joints_title{
+  margin-top: 0;
+}
+@media(max-width: 960px){
+  .article-page-wrapper .slick-slider{
+    height: fit-content !important;
+  }
+}
+@media(max-width: 512px){
+  .t-slds__arrow_body{
+    width: 14px !important;
+  }
+  .article-page-wrapper .slick-prev{
+    left: 0px !important;
+  }
+  .article-page-wrapper .slick-next{
+    right: 0px !important;
+  }
+  .article-page-wrapper .slick-arrow{
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
 /* PricePage start */
 .PricesCard_wrapper{
   margin-top: 40px;
