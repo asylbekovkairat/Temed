@@ -1624,7 +1624,7 @@
   color: #0e7496;
 }
 .header-more {
-  left: -350% !important;
+  left: -400% !important;
 }
 .header-lower-services {
   position: relative;
@@ -1719,7 +1719,7 @@
 }
 
 .header-lower-block {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2305,6 +2305,10 @@
 .callback_wrapper > .consultation-card{
   padding: 8px 15px !important;
   border-color: rgba(131, 130, 130, 0.5);
+  background: white;
+}
+.react-tel-input .selected-flag{
+  background: white;
 }
 @media(max-width: 960px){
   .doctor_card_wrapper{
@@ -2330,3 +2334,127 @@
   flex-wrap: wrap;
   justify-content: space-between;
 } 
+
+.article-page-wrapper .slick-slider{
+  height: 280px !important;
+}
+.article-page-wrapper .slick-prev{
+  left: -80px !important;
+}
+.article-page-wrapper .slick-next{
+  right: -80px !important;
+}
+.article-page-wrapper .slick-arrow{
+    background: #ff685a !important;
+}
+.article-page-wrapper .slick-arrow:hover{
+  background: white !important;
+  
+}
+.article-page-wrapper .slick-arrow:hover svg{
+  transition: all 0.5s ease-in-out;
+  filter: invert(60%) sepia(34%) saturate(4475%) hue-rotate(324deg) brightness(100%) contrast(101%);
+}
+.article-last-slider .slick-slider{
+  height: 100% !important;
+}
+.article-page-wrapper .joints_title{
+  margin-top: 0;
+}
+@media(max-width: 960px){
+  .article-page-wrapper .slick-slider{
+    height: fit-content !important;
+  }
+}
+@media(max-width: 512px){
+  .t-slds__arrow_body{
+    width: 14px !important;
+  }
+  .article-page-wrapper .slick-prev{
+    left: 0px !important;
+  }
+  .article-page-wrapper .slick-next{
+    right: 0px !important;
+  }
+  .article-page-wrapper .slick-arrow{
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+/* PricePage start */
+.PricesCard_wrapper{
+  margin-top: 40px;
+}
+.priceCard{
+  margin-bottom: 100px;
+}
+.priceCard > .priceReason_wrapper{
+  margin-bottom: 40px;
+}
+.priceHead{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  border-bottom: 1px solid black;
+  font-size: 17px;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+.priceReason{
+  padding: 20px;
+  border-bottom: 1px solid black;
+  color: #4c4c4c;
+  font-size: 15px;
+  line-height: 1.30;
+  font-weight: 300;
+}
+.staticPath{
+  margin-top: 35px;
+  color: #4c4c4c;
+  font-size: 16px;
+}
+.priceListCity{
+  width: 200px;
+  height: 50px;
+  background-color: #0e7496;
+  color: #ffffff !important;
+  font-weight: 400 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.priceListCity div{
+  padding-bottom: 5px;
+}
+/* PricePage end */
+
+
+/* otherService Page start */
+.recoveryTitle{
+  width: 100%;
+  height: 150px;
+  background-color: #f5f7fa;
+  display: flex;
+  align-items: center;
+  color: #4c4c4c;
+  font-size: 42px;
+  line-height: 1.23;
+  margin-top: 10px;
+}
+
+.recoveryCard > div:nth-of-type(1) > div:nth-of-type(1){
+  max-width: 535px !important; 
+}
+.recoveryCard > div:nth-of-type(2) > div:nth-of-type(1){
+  max-width: 535px !important; 
+}
+@media (max-width: 512px){
+  .recoveryCard > div > div:nth-of-type(1){
+    max-width: 535px !important; 
+  }
+  
+}
+
+/* otherService Page end */

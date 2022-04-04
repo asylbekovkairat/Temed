@@ -1,11 +1,19 @@
 .main {
   font-size: 16px;
   font-family: sans-serif;
-  margin: 50px 0;
   color: #4c4c4c;
+  transition: all 0.5s ease-in-out;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.main > span:hover {
+  color: #9e9e9e;
+  cursor: pointer;
 }
 .title {
   display: flex;
+  padding: 50px 0;
   margin-bottom: 50px;
 }
 .title_left {
@@ -62,19 +70,26 @@
   display: flex;
   justify-content: flex-start;
 }
-.price div:nth-of-type(2) {
+.price > div:nth-of-type(2) {
+  background: #f5f7fa;
+  width: fit-content;
+  padding: 30px;
+  padding-right: 100px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+.price > div:nth-of-type(2) > div:nth-of-type(1) {
   font-family: "Rubik", Arial, sans-serif;
   font-weight: 400;
   color: #4c4c4c;
   font-size: 20px;
 }
-.price div:nth-of-type(3) {
+.price > div:nth-of-type(2) > div:nth-of-type(2) {
   color: #0e7496;
   font-size: 30px;
   font-weight: 400;
   font-size: 30px;
   margin-top: 20px;
-  margin-bottom: 80px;
 }
 .price {
   margin-bottom: 120px;
@@ -91,7 +106,6 @@
 }
 .situation > div:nth-of-type(3) {
   display: flex;
-  justify-content: center;
 }
 .situation > div:nth-of-type(3) > div {
   width: 90%;
@@ -99,8 +113,11 @@
   flex-wrap: wrap;
 }
 .situation > div:nth-of-type(3) > div > div {
-  margin-bottom: 40px;
-  margin-right: 50px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 30px;
 }
 .technics {
   display: flex;
@@ -130,17 +147,17 @@
   .doctor_card_title {
     justify-content: center;
   }
-  .title{
+  .title {
     flex-direction: column;
   }
-  .title_left{
+  .title_left {
     width: 100%;
     margin-bottom: 30px;
   }
-  .title_right{
+  .title_right {
     width: 100%;
   }
-  .technics{
+  .technics {
     flex-direction: column;
   }
 }

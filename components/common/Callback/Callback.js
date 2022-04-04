@@ -3,7 +3,7 @@ import css from "../../../styles/callback.module.css"
 
 export default function Callback() {
     return (
-        <div className={css.wrapper}>
+        <div className={css.wrapper + " container"}>
             <div className={css.title_wrapper}>
                 <div className={css.title}>Мы перезвоним!</div>
                 <div>Расскажем о лечении и запишем на консультацию к массажисту</div>

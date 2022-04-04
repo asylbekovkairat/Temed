@@ -1,0 +1,302 @@
+.container-spine {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.spine-block-header {
+  background-color: #f5f7fa;
+  width: 100%;
+  margin-bottom: 4%;
+  height: auto;
+}
+.spine-block-second-header {
+  background-color: #f5f7fa;
+  width: 100%;
+  margin-top: 3%;
+  height: auto;
+  padding-bottom: 3%;
+}
+.spine-block-header p {
+  font-size: 38px;
+  color: #4c4c4c;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.spine-block-second-header p {
+  font-size: 38px;
+  color: #4c4c4c;
+  padding-top: 4%;
+}
+.spine-block-nav {
+  height: 100px;
+  padding-top: 30px;
+}
+.spine-onlineConsultation-block {
+  height: auto;
+  padding-top: 60px;
+}
+.spine-main-text {
+  font-size: 18px;
+  padding-top: 30px;
+  color: #4c4c4c;
+  line-height: 1.55;
+}
+.spine-main-text a {
+  color: #4292ad;
+}
+
+.terapy-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 60px;
+}
+.terapy-block-wrapper {
+  border: 1px solid #dbdbdb;
+  width: 40%;
+  padding: 20px;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+}
+.terapy-block-wrapper img {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  align-items: center;
+}
+.terapy-name {
+  color: rgb(76, 76, 76);
+  font-weight: 500;
+  font-family: Rubik;
+  height: 59px;
+}
+.terapy-mainText {
+  color: rgb(76, 76, 76);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+.terapy-interval {
+  color: rgb(14, 116, 150);
+  text-align: left;
+  box-sizing: content-box;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.terapy-video-header {
+  color: #4c4c4c;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Rubik";
+  text-align: center;
+  padding: 60px;
+}
+.terapy-video {
+  width: 90%;
+  height: 540px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.terapy-result {
+  background-color: #f5f7fa;
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+}
+.terapy-result-header {
+  color: #4c4c4c;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Rubik";
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.terapy-result-mainText {
+  font-size: 18px;
+  color: #4c4c4c;
+  text-align: center;
+}
+
+.spine-slider {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  object-fit: contain;
+  margin-top: 6%;
+}
+.spine-slider img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.spine-imgText {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  font-weight: 300;
+  font-family: "Rubik";
+  font-size: 14px;
+  line-height: 1.35;
+  color: rgb(76, 76, 76);
+}
+
+@media (max-width: 960px) {
+  .terapy-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .terapy-block-wrapper {
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spine-block-header p {
+    font-size: 25px;
+  }
+  .spine-block-second-header p {
+    font-size: 25px;
+  }
+  .terapy-result-header {
+    font-size: 30px;
+  }
+  .terapy-video-header {
+    font-size: 30px;
+  }
+  .terapy-video {
+    height: 200px;
+  }
+  .spine-slider {
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+    margin-top: 8%;
+    object-fit: contain;
+  }
+  .spine-slider img {
+    object-fit: contain;
+    width: 100%;
+    height: 30%;
+  }
+}
+@media (max-width: 512px) {
+  .terapy-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .terapy-block-wrapper {
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .spine-block-header p {
+    font-size: 25px;
+  }
+  .spine-block-second-header p {
+    font-size: 25px;
+  }
+  .terapy-result-header {
+    font-size: 30px;
+  }
+  .terapy-video-header {
+    font-size: 30px;
+  }
+  .terapy-video {
+    height: 200px;
+  }
+  .spine-main-slider .slick-slider {
+    height: 400px !important;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .spine-main-slider .slick-slider {
+    height: 300px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .spine-main-slider .slick-slider {
+    height: 530px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 414px) {
+  .spine-main-slider .slick-slider {
+    height: 300px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 412px) {
+  .spine-main-slider .slick-slider {
+    height: 280px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .spine-main-slider .slick-slider {
+    height: 350px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .spine-main-slider .slick-slider {
+    height: 260px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 280px) {
+  .spine-main-slider .slick-slider {
+    height: 250px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .terapy-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .terapy-block-wrapper {
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .spine-block-header p {
+    font-size: 25px;
+  }
+  .spine-block-second-header p {
+    font-size: 25px;
+  }
+  .terapy-result-header {
+    font-size: 30px;
+  }
+  .terapy-video-header {
+    font-size: 30px;
+  }
+  .terapy-video {
+    height: 200px;
+  }
+  .spine-main-slider .slick-slider {
+    height: 250px !important;
+    margin-bottom: 50px;
+  }
+}

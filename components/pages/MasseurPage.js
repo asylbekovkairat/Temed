@@ -11,9 +11,10 @@ import Callback from "../common/Callback/Callback"
 export default function MasseurPage() {
   return (
     <div>
-      <div className='container'>
-        <div className={css.main}> Главная / Массаж</div>
-        <div className={css.title}>
+      
+        <div className={css.main + " container"}> <Link href="/"><span>Главная </span></Link> / Массаж</div>
+      <div style={{ background: "#f5f7fa" }}>
+        <div className={css.title + " container"}>
           <div className={css.title_left}>
             <div>Записаться
               на массаж</div>
@@ -22,6 +23,8 @@ export default function MasseurPage() {
             <img src='https://thumb.tildacdn.com/tild3432-6562-4634-b632-646633613238/-/format/webp/SFOT4927_1_1.jpg' />
           </div>
         </div>
+        </div>
+        <div className="container">
         <div className={css.admission}>
           <div>Как проходит прием</div>
           <div>
@@ -40,13 +43,18 @@ export default function MasseurPage() {
         <DoctorCard list={DoctorList}/>
         <div className={css.price}>
           <div className={css.doctor_card_title}>Стоимость массажа</div>
-          <div>Массаж при заболеваниях <br /> позвоночника</div>
+          <div>
+            <div>Массаж при заболеваниях <br /> позвоночника</div>
           <div>от 1 200 руб.</div>
+          </div>
+          
           <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
             <button className="big-btn btn btn-white">Смотреть все цены</button>
           </div>
         </div>
-        <div className={css.situation}>
+      </div>
+      <div style={{ background: "#f5f7fa"}}>
+        <div className={css.situation + " container"}>
           <div className={css.doctor_card_title}>В каких случаях обращаются к массажисту</div>
           <div>Массаж убирает напряжение и боль при травмах и хронических заболеваниях. К массажисту обращаются для работы с:</div>
           <div>
@@ -62,6 +70,8 @@ export default function MasseurPage() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container">
         <div className={css.technicians}>
           <div className={css.doctor_card_title}>Техники, которыми владеют наши специалисты</div>
           <div className={css.technics}>
@@ -78,6 +88,8 @@ export default function MasseurPage() {
           <div className={css.doctor_card_title}>Статьи по теме</div>
          <ArticleCard list={ articleList }/>
         </div>
+      </div>
+      <div style={{ background: "#f5f7fa"}}>
         <Callback/>
       </div>
     </div>

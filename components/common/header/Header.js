@@ -16,6 +16,7 @@ export default function Header() {
     }, [activeBurger]);
     return (
         <div>
+            <div style={{ backgroundColor: "#f5f7fa"}}>
             <div className='header-upper-block container'>
                 <div className='header-upper-left'>
                     <img src='https://static.tildacdn.com/tild3464-6164-4637-b630-316165653264/maps-and-flags1.svg' />
@@ -39,6 +40,7 @@ export default function Header() {
                     <a href='tel: +79584055327'> <img src='https://static.tildacdn.com/tild6533-3431-4166-b465-336335663033/telephone2.svg' /> 8 (958) 405-53-27</a>
                 </div>
             </div>
+            </div>
             <div className="header-blue-adap-block">Лечим грыжу и другие причины боли в спине</div>
             <div className='header-lower-block container'>
                 <div className='header-lower-left'>
@@ -61,8 +63,10 @@ export default function Header() {
                         <div><p>Результаты</p></div>
                     </Link>
                     <div><p>Специалисты</p></div>
-                    <div><p>Цены</p></div>
-                    <div><p>Цены</p></div>
+                    <Link href="price">
+                        <div><p>Цены</p></div>
+                    </Link>
+                    <div><p>Контакты</p></div>
                     <div className='header-lower-services'><p>Еще...</p>
                         <div className='header-services-wrapper'>
                             <div className="rotated-block lower-rotated"></div>

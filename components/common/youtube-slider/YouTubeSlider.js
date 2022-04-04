@@ -32,7 +32,7 @@ export default function YouTubeSlider({ setYouTubeActive, setYouTubeUrl }) {
             <Slider {...settings}>
                 {
                     youtubeList.map((e) =>
-                        <div className="youtube-right-cards" key={e}>
+                        <div className="youtube-right-cards" key={e.id}>
                             <img onClick={() => { openYoutubeModal(e.url) }} src={e.img} />
                             <div>{e.title}</div>
                             <div>{e.des}</div>
