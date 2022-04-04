@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import Slider from "react-slick/lib/slider";
+import Callme from "../common/Block_CallMe/callMe";
 import Footer from "../common/footer/Footer";
 import Header from "../common/header/Header";
+import Mrt from "../common/mrt/mrt";
 import { SampleNextArrow, SamplePrevArrow } from "../constants/sample-arrows";
 
 const Spine = () => {
@@ -82,9 +84,10 @@ const Spine = () => {
   };
   return (
     <div>
+        <Header/>
       <div className="container">
         <div className="container-spine">   
-          <Header/>
+          
         </div>
       </div>
       <div className="spine-block-header">
@@ -93,10 +96,8 @@ const Spine = () => {
         </div>
       </div>
       <div className="container">
-        <div className="spine-block-nav">here must be main/ back treatment</div>
-        <div className="spine-onlineConsultation-block">
-          here will be existing component of this block
-        </div>
+        <div className="spine-block-nav">Главная / лечение позвоночника</div>
+        <Mrt/>
       </div>
       <div className="spine-block-second-header">
         <div className="container">
@@ -182,6 +183,7 @@ const Spine = () => {
           </div>
         </div>
       </div>
+      <Callme/>
       <Footer/>
     </div>
   );

@@ -10,7 +10,7 @@ import {
 } from "./../common/doctors/UsersData";
 import Articles from "../common/doctors/Article";
 import CheckBox from "../common/doctors/CheckBox";
-import Users from "../common/doctors/users";
+import Users from "../common/doctors/Users";
 
 export const Doctors = () => {
   const [users, setUsers] = useState(usersData);

@@ -245,7 +245,7 @@ grid-template-rows: repeat(7, 400px);
 }
 .articleCard {
   text-align: left;
-  width: 45%;
+  width: 30%;
   height: auto;
   border-radius: 30px;
   cursor: pointer;
@@ -306,6 +306,9 @@ grid-template-rows: repeat(7, 400px);
   
   padding-bottom: 30px;
 }
+.articleCard{
+  width: 40%;
+}
 }
 
 @media (max-width: 960px) {
@@ -336,6 +339,9 @@ grid-template-rows: repeat(7, 400px);
   }
   .articleCard:hover {
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  }
+  .articleCard{
+    width: 50%;
   }
 }
 @media (max-width: 512px) {
@@ -372,5 +378,6 @@ grid-template-rows: repeat(7, 400px);
   }
   .articleCard{
     margin-bottom: 30px;
+    width: 100%;
   }
 }
