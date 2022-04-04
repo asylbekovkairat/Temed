@@ -395,7 +395,7 @@ export default function HomePage() {
                                         <Link href={e.insta}>
                                             {e.instaName}
                                         </Link>
-                                    </div>
+                                    </div>  
                                     <div>
                                         {e.name}
                                         <br />

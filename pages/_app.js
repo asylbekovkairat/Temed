@@ -11,6 +11,8 @@ import '../styles/footer.css'
 import '../styles/review.css'
 import '../styles/callMeFormMenu.css'
 import "react-phone-input-2/lib/style.css";
+import '../styles/spine.css'
+import '../styles/doctors.module.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
