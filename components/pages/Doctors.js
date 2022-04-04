@@ -36,8 +36,8 @@ export const Doctors = () => {
       logic === "OR"
         ? (m) => !hasFilters || filterCity(m) || filterSpec(m) // OR
         : (m) =>
-            !hasFilters ||
-            ((!hasCity || filterCity(m)) && (!hasSpec || filterSpec(m))) // AND
+          !hasFilters ||
+          ((!hasCity || filterCity(m)) && (!hasSpec || filterSpec(m))) // AND
     );
     setUsers(filteredUsers);
     setSelected(newFilters);
@@ -56,7 +56,7 @@ export const Doctors = () => {
         </div>
         <div className="container">
           <div className={cn.doctorBlockNav}>
-            main / back treatment
+            Главная / специалисты
           </div>
         </div>
       </div>
