@@ -57,7 +57,7 @@ export default function Header() {
                                 <Link href="joints  ">
                                     <div>Лечения суставов</div>
                                 </Link>
-                                <Link href="kurs_fizischeskoy_terapii">
+                                <Link href="kurs_fizicheskoy_terapii">
                                     <div>Курс физической теропии</div>
                                 </Link>
                             </div>
