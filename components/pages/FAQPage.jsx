@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Mrt from '../common/mrt/mrt';
 import faqList from '../constants/faq-list';
 import Faqcard from '../common/card_faq/FaqCard';
+import Callme from '../common/Block_CallMe/callMe';
 
 const Faqpage = () => {
     return (
@@ -16,7 +17,7 @@ const Faqpage = () => {
             <div className='container'>
                 <Mrt />
             </div>
-            <div}>
+            <div className={`container ${css.card}`}>
                 {
                     faqList.map((e)=><Faqcard
                     link={e.link}
@@ -26,6 +27,9 @@ const Faqpage = () => {
                     text={e.text}
                     />)
                 }
+            </div>
+            <div className={`container ${css.callme}`}>
+                <Callme/>
             </div>
         </div>
     );

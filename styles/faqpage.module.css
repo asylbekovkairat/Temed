@@ -23,3 +23,19 @@
 .link a:hover{
     opacity: 0.5;
 }
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1.5em;
+    justify-content: space-between;
+}
+@media (max-width:960px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .callme{
+        
+    }
+}
