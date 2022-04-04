@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './../../styles/kurs_fizicheskoy_terapii.module.css'
 
-export default function kurs_fizicheskoy_terapii() {
+export default function Kurs_fizicheskoy_terapii() {
     return (
         <div className={css.kurs_fizicheskoy_terapii}>
 

@@ -68,7 +68,7 @@ export default function Footer() {
                     </Link>
 
 
-                    <Link href="/kurs-fizicheskoy-terapii">
+                    <Link href="/kurs_fizicheskoy_terapii">
                         <p>
                             Курс физической терапии
                         </p>

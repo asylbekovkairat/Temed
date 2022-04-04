@@ -16,30 +16,30 @@ export default function Header() {
     }, [activeBurger]);
     return (
         <div>
-            <div style={{ backgroundColor: "#f5f7fa"}}>
-            <div className='header-upper-block container'>
-                <div className='header-upper-left'>
-                    <img src='https://static.tildacdn.com/tild3464-6164-4637-b630-316165653264/maps-and-flags1.svg' />
-                    <div className='header-upper-choose-clinic'><p>Выбрать клинику</p>
-                        <div className='header-clinics-wrapper'>
-                            <div className="rotated-block"></div>
-                            <div className='header-clinics'>
-                                <div>Москва, м.Фовизинская</div>
-                                <div>Москва, м.Технопарк</div>
-                                <div>Санкт-Петербург, м. Пионерская </div>
-                                <div>Краснодар, ул. Северная</div>
-                                <div>Казань, ул. Право-Булачная</div>
+            <div style={{ backgroundColor: "#f5f7fa" }}>
+                <div className='header-upper-block container'>
+                    <div className='header-upper-left'>
+                        <img src='https://static.tildacdn.com/tild3464-6164-4637-b630-316165653264/maps-and-flags1.svg' />
+                        <div className='header-upper-choose-clinic'><p>Выбрать клинику</p>
+                            <div className='header-clinics-wrapper'>
+                                <div className="rotated-block"></div>
+                                <div className='header-clinics'>
+                                    <div>Москва, м.Фовизинская</div>
+                                    <div>Москва, м.Технопарк</div>
+                                    <div>Санкт-Петербург, м. Пионерская </div>
+                                    <div>Краснодар, ул. Северная</div>
+                                    <div>Казань, ул. Право-Булачная</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div className='header-upper-right'>
+                        <button className='btn btn-white header-btn'>Отправить МРТ</button>
+                        <button className='btn btn-blue header-btn'>Школа пациентов <img src='https://static.tildacdn.com/tild3931-6638-4432-b561-383564633534/question.svg' /></button>
+                        <div>Пн-Вс: 8:00-20:00</div>
+                        <a href='tel: +79584055327'> <img src='https://static.tildacdn.com/tild6533-3431-4166-b465-336335663033/telephone2.svg' /> 8 (958) 405-53-27</a>
+                    </div>
                 </div>
-                <div className='header-upper-right'>
-                    <button className='btn btn-white header-btn'>Отправить МРТ</button>
-                    <button className='btn btn-blue header-btn'>Школа пациентов <img src='https://static.tildacdn.com/tild3931-6638-4432-b561-383564633534/question.svg' /></button>
-                    <div>Пн-Вс: 8:00-20:00</div>
-                    <a href='tel: +79584055327'> <img src='https://static.tildacdn.com/tild6533-3431-4166-b465-336335663033/telephone2.svg' /> 8 (958) 405-53-27</a>
-                </div>
-            </div>
             </div>
             <div className="header-blue-adap-block">Лечим грыжу и другие причины боли в спине</div>
             <div className='header-lower-block container'>
@@ -51,18 +51,24 @@ export default function Header() {
                         <div className='header-services-wrapper'>
                             <div className="rotated-block lower-rotated"></div>
                             <div className='header-services'>
-                                <div>Лечения позвоночника</div>
+                                <Link href="spine">
+                                    <div>Лечения позвоночника</div>
+                                </Link>
                                 <Link href="joints  ">
                                     <div>Лечения суставов</div>
                                 </Link>
-                                <div>Курс физической теропии</div>
+                                <Link href="kurs_fizischeskoy_terapii">
+                                    <div>Курс физической теропии</div>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <Link href="/result">
                         <div><p>Результаты</p></div>
                     </Link>
-                    <div><p>Специалисты</p></div>
+                    <Link href="/doctors">
+                        <div><p>Специалисты</p></div>
+                    </Link>
                     <Link href="price">
                         <div><p>Цены</p></div>
                     </Link>
@@ -75,10 +81,10 @@ export default function Header() {
                                 <div>Запись на прием к ортопеду-травматологу</div>
                                 <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
-                                <div>Статьи</div>
+                                <Link href="/articles"><div>Статьи</div></Link>
                                 <div>О методике</div>
                                 <div>Отзывы</div>
-                                <div>Вопросы</div>
+                                <Link href="/faq"><div>Вопросы</div></Link>
                                 <div>Краудфандинг</div>
                             </div>
                         </div>
@@ -141,18 +147,20 @@ export default function Header() {
                         <div className='header-clinics-wrapper'>
                             <div className="rotated-block burger-rotated"></div>
                             <div className='header-clinics'>
-                                <div>Лечения позвоночника</div>
+                                <Link href="/spine">
+                                    <div>Лечения позвоночника</div>
+                                </Link>
                                 <Link href="joints">
                                     <div>Лечения суставов</div>
                                 </Link>
-                                <div>Курс физической теропии</div>
+                                <Link href="kurs_fizicheskoy_terapii"><div>Курс физической теропии</div></Link>
                             </div>
                         </div>
                     </div>
                     <Link href="result">
                         <div>РЕЗУЛЬТАТЫ</div>
                     </Link>
-                    <div>СПЕЦИАЛИСТЫ</div>
+                    <Link href="/doctors"><div>СПЕЦИАЛИСТЫ</div></Link>
                     <div>ЦЕНЫ</div>
                     <div>КОНТАКТЫ</div>
                     <div className='header-upper-choose-clinic header-burger-clinic'><p>ЕЩЕ...</p>
@@ -163,10 +171,10 @@ export default function Header() {
                                 <div>Запись на прием к ортопеду-травматологу</div>
                                 <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
-                                <div>Статьи</div>
+                                <Link href="/articles"><div>Статьи</div></Link>
                                 <div>О методике</div>
                                 <div>Отзывы</div>
-                                <div>Вопросы</div>
+                                <Link href="/faq"><div>Вопросы</div></Link>
                                 <div>Краудфандинг</div>
                             </div>
                         </div>
