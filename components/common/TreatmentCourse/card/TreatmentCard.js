@@ -10,7 +10,6 @@ export default function TreatmentCard({id,setId,index,...props}) {
     setModalActive(true)
     setId(index)
     document.body.style.overflowY = "hidden"
-    
 }
   return (
     <div>

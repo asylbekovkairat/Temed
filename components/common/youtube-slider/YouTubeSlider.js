@@ -23,18 +23,19 @@ export default function YouTubeSlider({ setYouTubeActive, setYouTubeUrl }) {
         ]
     }
     const openYoutubeModal = (el)=>{
-        setYouTubeActive(false)
+        setYouTubeActive(true)
         setYouTubeUrl(el)
+        document.body.style.overflowY = "hidden"
     }
     return (
         <div className="youtube-slider">
             <Slider {...settings}>
                 {
                     youtubeList.map((e) =>
-                        <div onClick={openYoutubeModal(e.url)} className="youtube-right-cards" key={e}>
-                            <img src={e.img} />
-                            <div>Что делать при грыже</div>
-                            <div>Секрет быстрого выздоровления </div>
+                        <div className="youtube-right-cards" key={e.id}>
+                            <img onClick={() => { openYoutubeModal(e.url) }} src={e.img} />
+                            <div>{e.title}</div>
+                            <div>{e.des}</div>
                         </div>
                     )
                 }

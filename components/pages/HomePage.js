@@ -12,23 +12,28 @@ import ReviewList from "../constants/Reviews-info";
 import YouTubeSlider from "../common/youtube-slider/YouTubeSlider";
 import TreatmentCourse from "../common/TreatmentCourse/mainCard/TreatmentCourse";
 import reviewCard from "../constants/review-card";
-import PhoneInput from "react-phone-input-2";
+import Callme from "../common/Block_CallMe/callMe";
 import {useState, useEffect} from "react"
-import {db} from "../../config/firebase.js"
+import Mrt from "../common/mrt/mrt";
+import RegToWeb from "./../common/RegToWeb/RegToWeb";
+import cityAddressList from "../constants/city-address-list"
+import Card from "../common/card/ConsultaitionCard";
 
 export default function HomePage() {
     const [activeSlide, setActiveSlide] = useState(0)
     const [youtubeActive, setYouTubeActive] = useState(false)
     const [youtubeUrl, setYouTubeUrl] = useState("")
     const [id, setId] = useState(0)
-    const [phone, setPhone] = useState("");
+    
+    const closeModalYouTube = ()=>{
+        setYouTubeActive(false);
+        setYouTubeUrl("");
+        document.body.style.overflowY = "visible"
+    }
 
     return (
         <div>
-            {/* MainSlider */}
             <MainSlider />
-
-            {/* adap-slider */}
             <div className="adap-wrapper">
                 <div className="adap">
                     <div className=" thirdSlider">
@@ -55,25 +60,13 @@ export default function HomePage() {
                             <img src='https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png' />
 
                         </div>
-
-                        <div className="secondSliderWrapper">
-                            <div className="secondSliderText">
-                                Пациенты сами рассказывают о своём лечении
-                            </div>
-                            <Link href="/">
-                                <button className="slick-btn">Посмотреть вебинар</button>
-                            </Link>
-                        </div>
-                        <div className="third-slider-wrapper">
-                            <img src="https://static.tildacdn.com/tild6563-3537-4334-b265-623866653661/video-banner-bg_copy.png" />
-                        </div>
                     </div>
                 </div>
                 <div className="cards-wrapper adap-cards">
                     {mainSliderCardList.map((e) => (
                         <div
                             style={{ backgroundColor: e.color }}
-                            key={e.text}
+                            key={e.id}
                             className="cardWrapper adap-card"
                         >
                             <div className="adap-title-wrapper">
@@ -90,22 +83,9 @@ export default function HomePage() {
                     ))}
                 </div>
             </div>
-            
+            <Mrt/>
             <section className="mrt-section">
                 <div className="container">
-                    <div className="mrt">
-                        <img src="https://static.tildacdn.com/tild3962-3363-4530-b466-386339303338/chiropractor-concept.jpg" />
-                        <div className="mrt-text-wrapper">
-                            <div className="mrt-text">
-                                <h3>Получите онлайн-консультацию по снимкам МРТ</h3>
-                                <div>
-                                    Вы узнаете можно ли вылечить грыжу без операции в нашей
-                                    клинике
-                                </div>
-                            </div>
-                            <button className="slick-btn btn-mrt">Показать МРТ врачу</button>
-                        </div>
-                    </div>
 
                     <div className="mrt-title-slider-wrapper">
                         <div className="mrt-title">
@@ -133,8 +113,8 @@ export default function HomePage() {
                                 До
                             </div>
                             {
-                                mrtDesList[activeSlide].before.map((e, index) =>
-                                    <div key={index} className="mrt-before-des-text">
+                                mrtDesList[activeSlide].before.map((e) =>
+                                    <div key={e.id} className="mrt-before-des-text">
                                         <div>
                                             {e}
                                         </div>
@@ -149,8 +129,8 @@ export default function HomePage() {
                             </div>
 
                             {
-                                mrtDesList[activeSlide].after.map((e, index) =>
-                                    <div key={index} className="mrt-after-des-text">
+                                mrtDesList[activeSlide].after.map((e) =>
+                                    <div key={e.id} className="mrt-after-des-text">
                                         <div><img src="https://static.tildacdn.com/tild3037-3031-4330-a464-353032323439/check.svg" /></div>
                                         <div>
                                             {e}
@@ -239,29 +219,31 @@ export default function HomePage() {
                                 <br />
                                 Активный популяризатор медицинской науки. Успешный блогер: за 5 лет более 30 млн. просмотров на ютуб-канале
                             </div>
-                            <Link href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ">
+                            <a href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ" target="_blank" rel="noopener noreferrer">
                                 <div className="youtube_links">
                                     <img src="https://thumb.tildacdn.com/tild3730-3834-4330-b336-663430313134/-/resize/66x/-/format/webp/kisspng-computer-ico.png" alt="yt" />
                                     558k
                                     <br />
                                     подписчиков
                                 </div>
-                            </Link>
+                            </a>
                         </div>
 
                         <img className="lowerDoctor" src="https://thumb.tildacdn.com/tild6361-3039-4665-a566-303862663031/-/cover/455x450/center/center/-/format/webp/Untitled-8_1.jpg" alt="" />
                     </div>
                 </div>
             </div>
-            <div className={"youtube-modal-wrapper " + (youtubeActive ? "youtube-modal-active" : "")}>
+            <div onClick={closeModalYouTube} className={"youtube-modal-wrapper " + (youtubeActive ? "youtube-modal-active" : "")}>
                 <iframe width="740" height="400" src={youtubeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <div><svg onClick={() => { setYouTubeActive(false) }} style={{ cursor: "pointer" }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg></div>
+
             </div>
             <div className="container youtube">
 
                 <div className="youtube-left-block">
                     <img className="youtube-clipboard" src="./clipboard.gif" />
                     <div className="youtube-title">
-                        <a><span>YouTube </span></a>
+                        <a href="https://www.youtube.com/channel/UCg4dLRPl2WhDcK5nKJkG5lQ" target="_blank" rel="noopener noreferrer"><span>YouTube </span></a>
                         канал доктора Епифанова
                     </div>
                     <div className="youtube-subscribers">Более 558 тыс. подписчиков</div>
@@ -288,7 +270,6 @@ export default function HomePage() {
                     <div className="treatmentBlock">
                         <TreatmentCourse id={id} setId={setId} />
                     </div>
-
                 </div>
             </div>
             <div className="therapy-title">Что мы лечим</div>
@@ -296,7 +277,7 @@ export default function HomePage() {
                 {
                     cardList_terapy.map((e)=> 
                         <Card_terapy 
-                            key={e.button}
+                            key={e.id}
                             img={e.img}
                             title={e.title} 
                             des1={e.des1} 
@@ -309,6 +290,11 @@ export default function HomePage() {
                     />)
                 }
             </div>
+            {
+                <div>
+                    <Card/>
+                </div>
+            }
             <div className="clinic">
                 <h3>
                     5 федеральных 
@@ -316,56 +302,20 @@ export default function HomePage() {
                 </h3>
             </div>
             <div className="container city_wrapper">
-                <Link href="/msk-technopark/">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6363-6466-4364-a334-383764323336/_1-05-01.svg" alt="moscow"/>
-                        <div>
-                            г. Москва
-                            <br/>
-                            м. Технопарк
+                {
+                    cityAddressList.map((e) => 
+                    <Link key={e.id} href={e.link}>
+                        <div className="city_address">
+                            <img src={e.img} />
+                            <div className="address">
+                                {e.city}
+                                <br />
+                                {e.address}
+                            </div>
                         </div>
-                    </div>
-                </Link>
-                <Link href="/msk-fonvizinskaya/">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6662-6263-4366-b030-636664636265/__2-10-01.svg" alt="moscow"/>
-                        <div>
-                            г. Москва
-                            <br/>
-                            м. Фонвизинская
-                        </div>
-                    </div>
-                </Link>
-                <Link href="spb">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6136-6636-4136-a231-373666376631/__-02-01.svg" alt="spb"/>
-                        <div>
-                            г. Санкт-Петербург
-                            <br/>
-                            м. Пионерская
-                        </div>
-                    </div>
-                </Link>
-                <Link href="/krasnodar">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild3065-6533-4030-a230-616563323438/-06-06-01.svg" alt="krasnodar"/>
-                        <div>
-                            г. Краснодар
-                            <br/>
-                            ул. Северная 
-                        </div>
-                    </div>
-                </Link>
-                <Link href="kazan">
-                    <div className="city_address">
-                        <img src="https://static.tildacdn.com/tild6363-3530-4265-b434-383134653932/-04-01.svg" alt="kazan"/>
-                        <div>
-                            г. Казань
-                            <br/>
-                            ул. Право-Булачная
-                        </div>
-                    </div>
-                </Link>
+                    </Link>)
+                }
+                
             </div>
 
             <div className='container card_specialists'>
@@ -379,7 +329,7 @@ export default function HomePage() {
                     {
                         cardList_specialists.map((e) =>
                             <Card_specialists
-                                key={e.button}
+                                key={e.id}
                                 {...e}
                             />
                         )
@@ -394,7 +344,7 @@ export default function HomePage() {
                     {
                         ReviewList.map((e) =>
                             <Review
-                                key={e.title}
+                                key={e.id}
                                 img={e.img}
                                 title={e.title}
                                 starEmpty={e.starEmpty}
@@ -431,7 +381,7 @@ export default function HomePage() {
                     <div className="review-main-content-container">
                         {
                             reviewCard.map((e) =>
-                                <div key={e.name} className="review-main-content-first-info">
+                                <div key={e.id} className="review-main-content-first-info">
                                     <div className="review-main-content-avatar">
                                         <img src={e.img}></img>
                                     </div>
@@ -455,8 +405,6 @@ export default function HomePage() {
                         }
 
                     </div>
-
-
                 </div>
                 <div style={{ marginBottom: "25px", display: "flex", justifyContent: "center" }}>
                     <Link href="/">
@@ -464,61 +412,10 @@ export default function HomePage() {
                     </Link>
                 </div>
             </div>
-            <div className="container-block-callMe">
-                <div className="container">
-                    <div className="callMe-form-block">
-                        <div className="callMe-form-header-text">
-                            Хотите, мы Вам перезвоним?
-                        </div>
-                        <div className="callMe-form-text-description">
-                            Как уменьшить грыжу без операции и избавиться от боли в спине?
-                            Расскажем о лечении и запишем на консультацию к специалисту
-                        </div>
-                        <div className="callMe-form-phone-number">
-                            <div className="callMe-form-phone-number-input">
-                                <div>
-                                    Имя <br />
-                                    <input
-                                        className="callMe-form-name-input"
-                                        placeholder="Иванов Иван"
-                                    ></input>
-                                </div>
-                                <div>
-                                    Телефон * <br />
-                                    <PhoneInput
-                                        className="callMe-form-name-input"
-                                        placeholder="Номер телефона"
-                                        country={"kg"}
-                                        value={"phone"}
-                                        onChange={(phone) => setPhone({ phone })}
-                                    />
-                                </div>
-                                <div>
-                                    <Link href="/">
-                                        <button className="callMe-form-btn">Заказать звонок</button>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="callMe-form-footer">
-                                Нажимая на кнопку Заказать звонок, я подтверждаю, что ознакомлен
-                                и согласен с условиями
-                                <br />
-                                <Link href="/">
-                                    политики конфиденциальности и правилами обработки персональных
-                                    данных
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="callMe-form-img">
-                        <img
-                            src={
-                                "https://thumb.tildacdn.com/tild6561-3366-4464-b336-656330336231/-/resize/407x/-/format/webp/noroot_1.png"
-                            }
-                        ></img>
-                    </div>
-                </div>
+            <div className="RegToWeb-Wrapper">
+                <RegToWeb />
             </div>
+            <Callme/>
         </div>
 
     )

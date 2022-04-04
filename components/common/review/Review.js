@@ -1,5 +1,5 @@
 import React from 'react'
-export default function ({img, title, starsEmpty, starsFull, reviews, rating, btnReview}) {
+export default function Review({img, title, starsEmpty, starsFull, reviews, rating, btnReview}) {
 
   return (
     <div className='Review'>

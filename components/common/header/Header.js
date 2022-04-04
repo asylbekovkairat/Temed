@@ -1,20 +1,22 @@
 import Link from "next/link"
-import { useState,useEffect } from "react"
+import { useState, useEffect } from "react"
+
 
 export default function Header() {
     const [activeBurger, setActiveBurger] = useState(false)
     const [activeSearch, setActiveSearch] = useState(false)
     const [search, setSearch] = useState("")
     useEffect(() => {
-        if(activeBurger){
+        if (activeBurger) {
             document.body.style.overflowY = "hidden"
         }
-        else{
+        else {
             document.body.style.overflowY = "visible"
         }
     }, [activeBurger]);
     return (
         <div>
+            <div style={{ backgroundColor: "#f5f7fa"}}>
             <div className='header-upper-block container'>
                 <div className='header-upper-left'>
                     <img src='https://static.tildacdn.com/tild3464-6164-4637-b630-316165653264/maps-and-flags1.svg' />
@@ -38,6 +40,7 @@ export default function Header() {
                     <a href='tel: +79584055327'> <img src='https://static.tildacdn.com/tild6533-3431-4166-b465-336335663033/telephone2.svg' /> 8 (958) 405-53-27</a>
                 </div>
             </div>
+            </div>
             <div className="header-blue-adap-block">Лечим грыжу и другие причины боли в спине</div>
             <div className='header-lower-block container'>
                 <div className='header-lower-left'>
@@ -49,22 +52,28 @@ export default function Header() {
                             <div className="rotated-block lower-rotated"></div>
                             <div className='header-services'>
                                 <div>Лечения позвоночника</div>
-                                <div>Лечения суставов</div>
+                                <Link href="joints  ">
+                                    <div>Лечения суставов</div>
+                                </Link>
                                 <div>Курс физической теропии</div>
                             </div>
                         </div>
                     </div>
-                    <div><p>Результаты</p></div>
+                    <Link href="/result">
+                        <div><p>Результаты</p></div>
+                    </Link>
                     <div><p>Специалисты</p></div>
-                    <div><p>Цены</p></div>
-                    <div><p>Цены</p></div>
+                    <Link href="price">
+                        <div><p>Цены</p></div>
+                    </Link>
+                    <div><p>Контакты</p></div>
                     <div className='header-lower-services'><p>Еще...</p>
                         <div className='header-services-wrapper'>
                             <div className="rotated-block lower-rotated"></div>
                             <div className='header-services header-more'>
                                 <div>Запись на прием к неврологу</div>
                                 <div>Запись на прием к ортопеду-травматологу</div>
-                                <div>Запись на массаж</div>
+                                <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
                                 <div>Статьи</div>
                                 <div>О методике</div>
@@ -110,9 +119,9 @@ export default function Header() {
                     <svg style={{ cursor: "pointer" }} onClick={() => { setActiveSearch(false) }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg>
                 </div>
             </div>
-            <div onClick={()=>{setActiveBurger(false)}} className={"header-burger-modal-wrapper " +(activeBurger ? "active" : "")}>
-                <div className="header-burger-modal" onClick={(e)=>{e.stopPropagation()}}>
-                    <div>    <svg onClick={()=>{setActiveBurger(false)}} style={{ cursor: "pointer" }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg></div>
+            <div onClick={() => { setActiveBurger(false) }} className={"header-burger-modal-wrapper " + (activeBurger ? "active" : "")}>
+                <div className="header-burger-modal" onClick={(e) => { e.stopPropagation() }}>
+                    <div>    <svg onClick={() => { setActiveBurger(false) }} style={{ cursor: "pointer" }} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path> </svg></div>
                     <div>ГЛАВНАЯ</div>
                     <div className='header-upper-choose-clinic header-burger-clinic'><p>ВЫБРАТЬ КЛИНИКУ</p>
                         <div className='header-clinics-wrapper'>
@@ -133,12 +142,16 @@ export default function Header() {
                             <div className="rotated-block burger-rotated"></div>
                             <div className='header-clinics'>
                                 <div>Лечения позвоночника</div>
-                                <div>Лечения суставов</div>
+                                <Link href="joints">
+                                    <div>Лечения суставов</div>
+                                </Link>
                                 <div>Курс физической теропии</div>
                             </div>
                         </div>
                     </div>
-                    <div>РЕЗУЛЬТАТЫ</div>
+                    <Link href="result">
+                        <div>РЕЗУЛЬТАТЫ</div>
+                    </Link>
                     <div>СПЕЦИАЛИСТЫ</div>
                     <div>ЦЕНЫ</div>
                     <div>КОНТАКТЫ</div>
@@ -148,7 +161,7 @@ export default function Header() {
                             <div className='header-clinics'>
                                 <div>Запись на прием к неврологу</div>
                                 <div>Запись на прием к ортопеду-травматологу</div>
-                                <div>Запись на массаж</div>
+                                <Link href="/masseur"><div>Запись на массаж</div></Link>
                                 <div>Другие услугии</div>
                                 <div>Статьи</div>
                                 <div>О методике</div>
@@ -158,7 +171,7 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                    <div style={{position: "absolute", bottom: "10px"}}>
+                    <div style={{ position: "absolute", bottom: "10px" }}>
                         <a href='tel: +79584055327'>8 (958) 405-53-27</a>
                         <div>Пн-Вс: 8:00-20:00</div>
                         <div className="header-burger-modal-svg">
