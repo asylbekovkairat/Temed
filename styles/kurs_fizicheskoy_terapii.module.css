@@ -1,0 +1,270 @@
+.kurs_fizicheskoy_terapii{
+   
+  
+}
+.block1{
+    width: 640px;
+    padding-left: 60px;
+}
+#title{
+font-size: 42px;
+color: #4c4c4c;
+margin-bottom: 20px;
+}
+#des{
+font-size: 16px;
+color: #4c4c4c;
+ine-height: 1.4;
+}
+.block1 >button{
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Rubik',Arial,sans-serif;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-width: 0px;
+    border-radius: 300px;
+    background-color: #0e7496;
+    background-position: center center;
+    border-color: #aaa5ed;
+    border-style: solid;
+    box-shadow: 0px 10px 50px -20px rgb(74 66 224 / 40%);
+    padding: 25px 45px;
+    
+}
+.block2{
+    margin-top: 120px;
+
+}
+.block2 > p{
+    font-size: 36px;
+    line-height: 18px;
+    text-align: center;
+}
+.block2_2{
+    display: flex;
+    padding: 50px 50px;
+justify-content: space-between;
+}
+.block2_card{
+border: 1px #bfbebe  solid;
+    height: 380px;
+    width: 360px;
+    padding: 30px 30px 40px;
+
+    
+}
+.title2{
+    font-size: 20px;
+color: #4c4c4c;
+margin-bottom: 20px;
+font-weight: 400;
+}
+.des2{
+    color: #4c4c4c;
+    line-height: 1.50;
+    font-size: 16px;
+    font-weight: 300;
+}
+.block3{
+margin-bottom: 60px;
+}
+.block3 > p{
+    text-align: center;
+    color: #4c4c4c;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.block3_1{
+display: flex;
+justify-content: center;
+
+}
+.block3_2{
+display: flex;
+justify-content: center;
+    
+}
+.block3_3{
+display: flex;
+justify-content: center;
+    
+}
+.point{
+    border-radius: 3000px;
+    background-color: #ffffff;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    width: 15px;
+    height: 15px;
+   margin-left: 49%;
+}
+.point:hover{
+    opacity: 0;
+}
+.block3_card1{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #eef2f8;
+    background-position: center center;
+    border: 1px solid #eef2f8;
+    width: fit-content;
+    padding: 10px 40px;
+    width: 420px;
+    margin: 5px 5px;
+
+}
+.block3_card1 >p{
+    color: #0e7496;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.block3_card2{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #eef2f8;
+    background-position: center center;
+    border: 1px solid #eef2f8;
+    width: fit-content;
+    padding: 10px 40px;
+    width: 289px;
+    margin: 5px 5px;
+
+}
+.block3_card2 >p{
+    color: #0e7496;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-top: 5px;
+}.block3_card3{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #eef2f8;
+    background-position: center center;
+    border: 1px solid #eef2f8;
+    width: fit-content;
+    padding: 10px 40px;
+    width: 420px;
+    margin: 5px 5px;
+
+}
+.block3_card3 >p{
+    color: #0e7496;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-top: 5px;
+}.block3_card4{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #eef2f8;
+    background-position: center center;
+    border: 1px solid #eef2f8;
+    width: fit-content;
+    padding: 10px 40px;
+    width: 440px;
+    margin: 5px 5px;
+
+
+}
+.block3_card4 >p{
+    color: #0e7496;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-top: 5px;
+}.block3_card5{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #eef2f8;
+    background-position: center center;
+    border: 1px solid #eef2f8;
+    width: fit-content;
+    padding: 10px 40px;
+    width: 440px;
+    margin: 5px 5px;
+
+}
+.block3_card5 >p{
+    color: #0e7496;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-top: 5px;
+}.block3_card6{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #eef2f8;
+    background-position: center center;
+    border: 1px solid #eef2f8;
+    width: fit-content;
+    padding: 10px 40px;
+    width: 678px;
+    margin: 5px 5px;
+}
+.block3_card6 >p{
+    color: #0e7496;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-top: 5px;
+   
+}
+
+
+
+
+
+
+
+
+.block4{
+margin-bottom: 60px;
+}
+.block4 > button{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Rubik',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    border-radius: 33px;
+    background-color: #0e7496;
+    background-position: center center;
+    border-color: #0e7496;
+   padding: 17px 50px;
+   border: 0;
+   margin-left: 41%;
+   margin-bottom: 30px;
+
+}
+#title4{
+    color: #4c4c4c;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#des4_1{
+    color: #0e7496;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+#des4_2{
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 50px;
+
+}#des4_3{
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+}
