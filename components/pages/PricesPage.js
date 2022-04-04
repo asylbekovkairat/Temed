@@ -16,7 +16,7 @@ export default function PricesPage() {
         </div>
         <div className="PricesCard_wrapper">
           {PriceCardList.map((item) => (
-            <PriceCard {...item} />
+            <PriceCard key={item.id} {...item} />
           ))}
         </div>
       </div>

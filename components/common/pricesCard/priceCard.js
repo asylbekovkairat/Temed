@@ -8,8 +8,8 @@ export default function PriceCard({priceHead, priceReason}) {
           <div>Цена Руб.</div>
         </div>
         <div className="priceReason_wrapper">
-          {priceReason.map((item) => (
-            <div className="priceReason">{item}</div>
+          {priceReason.map((item,index) => (
+            <div key={index} className="priceReason">{item}</div>
           ))}
         </div>
         <button className="btn slick-btn btn-red">Показать МРТ врачу</button>
