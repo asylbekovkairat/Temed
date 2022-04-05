@@ -30,7 +30,7 @@
 .wrapper button {
   width: fit-content;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
 }
 .location {
   font-family: sans-serif;
