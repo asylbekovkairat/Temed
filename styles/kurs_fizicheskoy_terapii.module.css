@@ -1,10 +1,8 @@
-.kurs_fizicheskoy_terapii{
-   
-  
+.mainTitle{
+    margin: 30px 0;
 }
 .block1{
     width: 640px;
-    padding-left: 60px;
 }
 #title{
 font-size: 42px;
@@ -14,7 +12,23 @@ margin-bottom: 20px;
 #des{
 font-size: 16px;
 color: #4c4c4c;
-ine-height: 1.4;
+line-height: 1.4;
+}
+.kurs_fizicheskoy_terapii{
+
+}
+.block1_wrapper{
+    background-image: url(https://thumb.tildacdn.com/tild6134-3138-4061-a665-343637643038/-/format/webp/image.png);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.block1{
+    padding-bottom: 50px;
+    
+}
+.block1_wrapper > div{
+    background-image: linear-gradient(to bottom, rgba(244,246,250,0.5), rgba(244,246,250,0.5));
 }
 .block1 >button{
     margin-top: 40px;
@@ -42,10 +56,12 @@ ine-height: 1.4;
     font-size: 36px;
     line-height: 18px;
     text-align: center;
+    height: 30px;
+    margin-bottom: 20px;
 }
 .block2_2{
+    flex-wrap: wrap;
     display: flex;
-    padding: 50px 50px;
 justify-content: space-between;
 }
 .block2_card{
@@ -80,13 +96,16 @@ margin-bottom: 60px;
 .block3_1{
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
 
 }
 .block3_2{
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
     
 }
+
 .block3_3{
 display: flex;
 justify-content: center;
@@ -113,7 +132,7 @@ justify-content: center;
     border: 1px solid #eef2f8;
     width: fit-content;
     padding: 10px 40px;
-    width: 420px;
+    width: 380px;
     margin: 5px 5px;
 
 }
@@ -227,7 +246,7 @@ justify-content: center;
 .block4{
 margin-bottom: 60px;
 }
-.block4 > button{
+.btn_wrapper > button{
     color: #ffffff;
     font-size: 14px;
     font-family: 'Rubik',Arial,sans-serif;
@@ -267,4 +286,25 @@ margin-bottom: 60px;
     text-align: center;
     color: #000000;
     font-size: 14px;
+}
+@media(max-width: 512px){
+    .block1{
+        width: 100%;
+    }
+    .block1_wrapper{
+        background-position: right ;
+    }
+    .block2_card{
+        margin-bottom: 20px;
+    }
+    .block3_1 > div{
+        width: 100%;
+    }
+    .btn_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .btn_wrapper > button{
+        margin-left: 0;
+    }
 }

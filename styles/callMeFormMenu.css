@@ -146,6 +146,14 @@
     width: 250px;
     
   }
+  .callMe-form-phone-number-input > div:nth-of-type(3){
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+  .callMe-form-btn{
+    margin-left: 0;
+  }
   .callMe-form-footer {
     text-align: center;
     width: auto;
@@ -257,4 +265,20 @@
 }
 .react-tel-input .flag-dropdown{
   border: none !important;
+}
+
+@media(max-width: 512px){
+  .callMe-form-name-input{
+    margin-right: 0;
+  }
+  .callMe-form-phone-number-input{
+    margin-left: 0;
+  }
+  .callMe-form-phone-number-input > div:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+  }
+  .callMe-form-btn{
+    margin-left: 0;
+  }
 }

@@ -300,3 +300,8 @@
     margin-bottom: 50px;
   }
 }
+@media(max-width: 512px){
+  .terapy-block-wrapper{
+    margin: 0;
+  }
+}

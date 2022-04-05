@@ -35,6 +35,12 @@
   }
 }
 
+@media(max-width: 512px){
+  .container{
+    max-width: 100%;
+  }
+}
+
 .authors {
   margin-top: 40px;
   display: flex;
@@ -1496,7 +1502,7 @@
 }
 @media (max-width: 512px) {
   .youtube-slider .slick-slider {
-    width: 350px !important;
+    width: 280px !important;
   }
   .youtube-slider .slick-prev {
     left: 35px !important;
@@ -2299,7 +2305,7 @@
 }
 .big-btn {
   height: 60px;
-  padding: 20px 50px;
+  padding: 10px 50px;
   font-size: 18px;
 }
 .callback_wrapper > .consultation-card{
@@ -2458,3 +2464,11 @@
 }
 
 /* otherService Page end */
+@media(max-width: 512px){
+  .painCard{
+    width: 100%;
+  }
+  .v_link{
+    width: 100%;
+  }
+}

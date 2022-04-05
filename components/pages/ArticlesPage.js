@@ -63,7 +63,7 @@ export default function ArticlesPage() {
                                 <div>
                                     <div>{e.title}</div>
                                     <div>{e.des}</div>
-                                    <div style={{ width: "fit-content" }}>
+                                    <div style={{ width: "100%" }}>
                                         <button className="big-btn btn btn-white">Подробнее</button>
                                     </div>
                                 </div>
