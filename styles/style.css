@@ -2155,7 +2155,7 @@
 .consultation-card {
   border: 1px solid grey;
   border-radius: 30px;
-    padding: 2px 15px;
+  padding: 2px 15px;
 }
 
 /* Joints Page start */
@@ -2294,8 +2294,9 @@
 .doctor_card_wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 50px;
+  margin-top: 40px;
 }
 .big-btn {
   height: 60px;
@@ -2445,10 +2446,10 @@
 }
 
 .recoveryCard > div:nth-of-type(1) > div:nth-of-type(1){
-  max-width: 535px !important; 
+  max-width: 555px !important; 
 }
 .recoveryCard > div:nth-of-type(2) > div:nth-of-type(1){
-  max-width: 535px !important; 
+  max-width: 555px !important; 
 }
 @media (max-width: 512px){
   .recoveryCard > div > div:nth-of-type(1){
@@ -2458,3 +2459,54 @@
 }
 
 /* otherService Page end */
+
+/* Othopedist Page start */
+.orthopedist_title {
+  display: flex;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+.orthopedist_title_left{
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 65px;
+}
+.orthopedist_title_left  div{
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 300;
+  color: #4c4c4c;
+  font-size: 54px;
+  width: 50%;
+}
+.orthopedist_title_right{
+  width: 50%;
+  height: 460px;
+}
+.How_reception div{
+  color: #4c4c4c;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 36px;
+}
+.How_reception > .reception_desc{
+  font-size: 20px;
+  line-height: 1.55;
+  color: #4c4c4c;
+}
+.wrapper_orthopedCard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.Orthopedistcard{
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 10%);
+}
+.Orthopedistcard img{
+  border-radius: 30px 30px 0px 0px;
+}
+/* Othopedist Page end */

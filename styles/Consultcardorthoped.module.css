@@ -1,0 +1,68 @@
+.consultation_card{
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 20px 15px;
+}
+.wrapper > div {
+  border-color: #d7dbe0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+.input {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+}
+.input > button {
+  margin-left: 25px;
+}
+.title {
+  color: #4c4c4c;
+  font-size: 24px;
+  font-family: "Rubik", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+}
+.des {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-family: "Rubik", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    justify-content: center;
+  }
+  .wrapper > div {
+    align-items: center;
+    padding: 8%;
+  }
+  .des {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+}
+@media (max-width: 512px) {
+  .input {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input > button {
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  .des {
+    width: 100%;
+  }
+}

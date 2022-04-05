@@ -40,7 +40,9 @@ export default function MasseurPage() {
         </div>
         <ConsultCardWithoutImg title={"Запишитесь на сеанс лечебного массажа"} des={"Сеанс массажа длится от 25 минут."} />
         <div className={css.doctor_card_title}>Массажисты клиники</div>
-        <DoctorCard list={DoctorList}/>
+        <div className="container">
+          <DoctorCard list={DoctorList}/>
+        </div>
         <div className={css.price}>
           <div className={css.doctor_card_title}>Стоимость массажа</div>
           <div>
