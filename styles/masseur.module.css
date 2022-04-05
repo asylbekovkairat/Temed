@@ -161,3 +161,14 @@
     flex-direction: column;
   }
 }
+@media(max-width: 512px){
+  .situation{
+    text-align: center;
+  }
+  .situation > div:nth-of-type(3){
+    justify-content: center;
+  }
+  .situation > div:nth-of-type(3) > div > div {
+    width: 100%;
+  }
+}

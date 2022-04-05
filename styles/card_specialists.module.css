@@ -61,5 +61,10 @@ background-color:#0e7496;
 @media(max-width: 512px){
     .card{
         margin-bottom: 25px;
+        width: 90%;
+        margin-left: 0;
+    }
+    .wrapper{
+        justify-content: center;
     }
 }

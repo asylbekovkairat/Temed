@@ -76,5 +76,6 @@
 @media(max-width: 512px){
     .title_wrapper{
         margin-left: 10px;
+        width: fit-content;
     }
 }
