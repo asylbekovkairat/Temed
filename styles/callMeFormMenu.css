@@ -199,7 +199,7 @@
     display: block;
   }
   .container-block-callMe{
-    height: 130vh;
+    height: 85vh;
   }
 }
 @media (max-width: 375px) {
@@ -276,6 +276,7 @@
   }
   .callMe-form-phone-number-input > div:nth-of-type(3){
     display: flex;
+    width: fit-content;
     justify-content: center;
   }
   .callMe-form-btn{

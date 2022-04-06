@@ -605,6 +605,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 40px;
+  margin-top: 80px;
 }
 .card_specialists_block1 {
   width: 280px;
@@ -651,10 +652,9 @@
 }
 .Reviews-Wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  height: 500px;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 .Reviews-Wrapper h2 {
   font-size: 36px;
@@ -975,7 +975,6 @@
   .Reviews-Wrapper {
     align-items: center;
     justify-content: space-around;
-    height: 1375px;
   }
   .Reviews-Wrapper .Reviews-Content {
     height: 1345px;
@@ -1552,12 +1551,29 @@
   line-height: 1;
   font-weight: 300;
 }
+.header-lower-block-wrapper{
+  height: fit-content;
+  position: relative;
+}
 .header-lower-block {
+
   color: #000000;
   font-size: 17px;
   font-family: "Rubik", Arial, sans-serif;
   line-height: 1;
   font-weight: 300;
+}
+@media(max-width: 512px){
+  .header-lower-block-wrapper{
+    height: 10vh;
+  }
+  .header-lower-block{
+      top: 0;
+  left: 0;
+  z-index: 20;
+  background: white;
+  position: fixed;
+  }
 }
 .header-upper-choose-clinic:hover > .header-clinics-wrapper {
   display: block;
@@ -1630,7 +1646,7 @@
   color: #0e7496;
 }
 .header-more {
-  left: -400% !important;
+  left: -105% !important;
 }
 .header-lower-services {
   position: relative;
@@ -1649,7 +1665,7 @@
 .header-upper-block {
   height: 7vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .btn {
@@ -1707,7 +1723,7 @@
   margin-left: 5px;
 }
 .header-upper-right {
-  width: 65%;
+  width: 35%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1773,7 +1789,7 @@
     width: 20%;
   }
   .header-upper-right {
-    width: 80%;
+    width: 45%;
   }
 }
 @media (max-width: 960px) {
@@ -2332,7 +2348,7 @@
     width: 180px !important;
   }
   .consultation-card .react-tel-input .form-control{
-    width: 100%;
+    width: 100% !important;
   }
 }
 .article_card_wrapper{
