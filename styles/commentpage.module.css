@@ -5,11 +5,16 @@
     color: #4c4c4c;
     font-size: 38px;
 }
-.title h2 {
+.subtitle h2 {
     font-family: "Rubik";
     font-weight: 300;
     color: #4c4c4c;
     font-size: 32px;
+}
+.subtitle{
+    height: 16vh;
+    display: flex;
+    align-items: center;
 }
 .title {
     height: 16vh;
@@ -31,4 +36,8 @@
 
 .link a:hover {
     opacity: 0.5;
+}
+.yandex{
+    display: flex;
+    
 }

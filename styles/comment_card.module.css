@@ -15,7 +15,11 @@
 .first_block h5{
     font-size: 18px;
     font-weight: bold;
-    color: #0071ff !important;
+    color: #0071ff;
+}
+.first_block h5:hover{
+    color: red;
+    cursor: pointer;
 }
 .second_block{
     width: 70%;
