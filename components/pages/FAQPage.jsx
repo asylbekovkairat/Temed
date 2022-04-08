@@ -20,6 +20,7 @@ const Faqpage = () => {
             <div className={`container ${css.card}`}>
                 {
                     faqList.map((e)=><Faqcard
+                    key={e.id}
                     link={e.link}
                     title={e.title}
                     des={e.des}

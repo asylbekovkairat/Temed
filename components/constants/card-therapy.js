@@ -8,7 +8,8 @@ const cardList_terapy =[
         des3: ", но и занимаемся",
         span2: "профилактикой проблем",
         des4: "быстрого старения позвоночника, т.е. его дегенерации",
-        button: "Подробнее"
+        button: "Подробнее",
+        id: 1
     },
     {
         img: "https://thumb.tildacdn.com/tild3362-3564-4266-b337-613563636134/-/cover/720x500/center/center/-/format/webp/IMG_8784.jpg",
@@ -19,7 +20,8 @@ const cardList_terapy =[
         des3: ", поставим диагноз, подберем варианты лечения. Наши узкопрофильные специалисты знают все о неспецифической боли в спине и точно смогут дать экспертные рекомендации",
         span2: "",
         des4: "",
-        button: "Подробнее"
+        button: "Подробнее",
+        id: 2
     },
     {
         img: "https://thumb.tildacdn.com/tild6232-6634-4563-a162-303464326531/-/cover/720x500/center/center/-/format/webp/noroot11.png",
@@ -30,7 +32,8 @@ const cardList_terapy =[
         des3: " с учетом ваших персональных особенностей",
         span2: "",
         des4: "",
-        button: "Подробнее"
+        button: "Подробнее",
+        id: 3
     }
     
 ]

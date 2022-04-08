@@ -5,6 +5,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/lineshirina/",
         instaName: "@lineshirina",
         name: "Анастасия Ширина",
+        id: 1
     },
     {
         img: "https://thumb.tildacdn.com/tild3736-3732-4862-b364-376433626538/-/cover/92x92/center/center/-/format/webp/43913234_19513269137.jpg",
@@ -12,6 +13,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/sasha_vinichuk/",
         instaName: "@sasha_vinichuk",
         name: "Александр Виничук",
+        id: 2
     },
     {
         img: "https://thumb.tildacdn.com/tild6265-3337-4639-b832-626531333261/-/cover/92x92/center/center/-/format/webp/15034647_11769711257.jpg",
@@ -19,6 +21,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/vi_lu19/",
         instaName: "@vi_lu19",
         name: "Victoriya Lunina",
+        id: 3
     },
     {
         img: "https://thumb.tildacdn.com/tild3162-6138-4665-a237-613263393431/-/cover/92x92/center/center/-/format/webp/126054518_1505842916.jpg",
@@ -26,6 +29,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/svet.lanap1117/",
         instaName: "@svet.lanap1117",
         name: "Светлана",
+        id: 4
     },
 ]
 export default reviewCard

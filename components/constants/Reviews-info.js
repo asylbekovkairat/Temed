@@ -6,7 +6,8 @@ const ReviewList =[
         starsFull: "https://prodoctorov.ru/static/img/star_full.png",
         reviews: "291 отзыв", 
         rating: "1 место из 382 в Москве",
-        btnReview: "Читать отзывы"
+        btnReview: "Читать отзывы",
+        id: 1
     },
     {
         img: "https://prodoctorov.ru/static/logo_widget.png",
@@ -15,7 +16,8 @@ const ReviewList =[
         starsFull: "https://prodoctorov.ru/static/img/star_full.png",
         reviews: "108 отзывов", 
         rating: "23 место из 382 в Москве",
-        btnReview: "Читать отзывы"
+        btnReview: "Читать отзывы",
+        id: 2
     },
     {
         img: "https://prodoctorov.ru/static/logo_widget.png",
@@ -24,7 +26,8 @@ const ReviewList =[
         starsFull: "https://prodoctorov.ru/static/img/star_full.png",
         reviews: "333 отзыва", 
         rating: "2 место из 226 в Санкт-Петербурге",
-        btnReview: "Читать отзывы"
+        btnReview: "Читать отзывы",
+        id: 3
     },
     {
         img: "https://prodoctorov.ru/static/logo_widget.png",
@@ -33,7 +36,8 @@ const ReviewList =[
         starsFull: "https://prodoctorov.ru/static/img/star_full.png",
         reviews: "73 отзыва", 
         rating: "9 место из 53 в Краснодаре",
-        btnReview: "Читать отзывы"
+        btnReview: "Читать отзывы",
+        id: 4
     },
     {
         img: "https://prodoctorov.ru/static/logo_widget.png",
@@ -42,7 +46,8 @@ const ReviewList =[
         starsFull: "https://prodoctorov.ru/static/img/star_full.png",
         reviews: "35 отзывов", 
         rating: "10 место из 69 в Казани",
-        btnReview: "Читать отзывы"
+        btnReview: "Читать отзывы",
+        id: 5
     },
 ]
 export default ReviewList
