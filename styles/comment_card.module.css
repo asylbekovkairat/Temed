@@ -2,6 +2,7 @@
     border: 1px solid gray;
     display: flex;
     padding: 10px;
+    margin: 10px auto;
 }
 .first_block{
     display: flex;
@@ -71,5 +72,8 @@
     .end{
         align-items: center;
         justify-content: center;
+    }
+    .card{
+        margin:40px 20px;
     }
 }

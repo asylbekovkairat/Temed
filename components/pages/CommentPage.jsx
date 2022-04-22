@@ -6,6 +6,7 @@ import CommentCard from "../common/comment_card/Comment_Card";
 import Callme from "../common/Block_CallMe/callMe";
 import YandexCom from "../constants/comment_yandex_card";
 import Commentyandexcard from "../common/comment-yandex_card/CommentYandexCard";
+import reviewCard from "../constants/review-card";
 
 const Commentpage = () => {
   return (
@@ -32,23 +33,52 @@ const Commentpage = () => {
         }
       </div>
       <div className={css.subtitle}><h2 className='container' >Отзывы с Яндекс. Карты </h2></div>
-      <div className="container">
-        <div className={css.yandex}>
-          {
-            YandexCom.map((item) => <Commentyandexcard
-              point={item.point}
-              num_comm={item.num_comm}
-              grade={item.grade}
-              name={item.name}
-              date={item.date}
-              img={item.img}
-              imgstar={item.imgstar}
-              imgstar_half={item.imgstar_half}
-              des={item.des}
-              end={item.end}
-            />)
-          }
-        </div>
+      <div className={`container ${css.yandex}`}>
+
+        {
+          YandexCom.map((item) => <Commentyandexcard
+            title={item.title}
+            point={item.point}
+            num_comm={item.num_comm}
+            grade={item.grade}
+            name={item.name}
+            date={item.date}
+            img={item.img}
+            imgstar={item.imgstar}
+            imgstar_half={item.imgstar_half}
+            des={item.des}
+            end={item.end}
+          />)
+        }
+
+      </div>
+      <div className={css.subtitle}><h2 className='container mb-5' >Отзывы из Инстаграм </h2></div>
+      <div className={`container ${css.revievBlock}`}>
+        {
+          reviewCard.map((e) =>
+            <div key={e.id} className={css.revievCard}>
+              
+                <div className={css.revievImg}>
+                  <img src={e.img}></img>
+                </div>
+                <div className={css.rev__first__block}>
+                  <div className={css.revievCom}>
+                    {e.comment}
+                  </div>
+                  <div className={css.revievName}>
+                    <Link href={e.insta}>
+                      {e.instaName}
+                    </Link>
+                  </div>
+                  <div className={css.revievDate}>
+                    {e.date}
+                  </div>
+                </div>
+              
+            </div>
+          )
+        }
+
       </div>
       <Callme />
     </div>

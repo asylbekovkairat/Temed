@@ -5,6 +5,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/lineshirina/",
         instaName: "@lineshirina",
         name: "Анастасия Ширина",
+        date: '21/08/2021',
         id: 1
     },
     {
@@ -13,6 +14,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/sasha_vinichuk/",
         instaName: "@sasha_vinichuk",
         name: "Александр Виничук",
+        date:'18/12/2021',
         id: 2
     },
     {
@@ -21,6 +23,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/vi_lu19/",
         instaName: "@vi_lu19",
         name: "Victoriya Lunina",
+        date:'21/12/2021',
         id: 3
     },
     {
@@ -29,6 +32,7 @@ const reviewCard = [
         insta: "https://www.instagram.com/svet.lanap1117/",
         instaName: "@svet.lanap1117",
         name: "Светлана",
+        date:'12/12/2021',
         id: 4
     },
 ]
